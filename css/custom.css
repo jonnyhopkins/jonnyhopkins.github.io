@@ -2,6 +2,7 @@
 .navbar {
   margin-bottom: 0;
   border-radius: 0;
+  float:top;
 }
 
 /* Add a gray background color and some padding to the footer */
@@ -10,15 +11,21 @@ footer {
   padding: 25px;
 }
 
+.carousel {
+  float:top;
+}
 .carousel-inner img {
   width: 100%; /* Set width to 100% */
   margin: auto;
   min-height:200px;
+  max-height:600px;
 }
 
 /* Hide the carousel text when the screen is less than 600 pixels wide */
+/* Commented out for now
 @media (max-width: 600px) {
 .carousel-caption {
   display: none;
 }
 }
+*/
