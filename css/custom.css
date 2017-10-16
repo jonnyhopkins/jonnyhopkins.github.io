@@ -71,6 +71,10 @@ body {
   margin-top: 10px;
 }
 
+#footright > a {
+  padding-right: 5px;
+}
+
 /* Stops fontawesome icons being blue and having link highlights */
 .navbar-text > a {
   color: inherit;
