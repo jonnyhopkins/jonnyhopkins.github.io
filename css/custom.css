@@ -33,14 +33,16 @@
 }
 
 
-
 .homeimg{
   padding-bottom: 10px;
   padding-top: 0px;
   padding-right: 7px;
   padding-left: 7px;
-
 }
+.homeimg img {
+  margin: auto;
+}
+
 
 .caption {
   color: white;
@@ -48,6 +50,12 @@
   position: absolute;
   bottom: 20px;
   left: 30px;
+}
+
+@media screen and (max-width:770px) and (min-width:654px) {
+  .caption {
+    left: 100px;
+  }
 }
 
 /* Sticky footer styles
