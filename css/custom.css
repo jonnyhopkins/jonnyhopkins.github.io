@@ -21,17 +21,11 @@
   min-height: 200px;
 }
 
-.carousel-inner img {
-/*
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  margin: auto;
-  min-height:200px;
-  max-height: 500px;
-*/
+@media screen and (min-width: 750px) {
+  .carousel-caption {
+    position: sticky;
+  }
 }
-
 
 .homeimg{
   padding-bottom: 10px;
@@ -39,6 +33,7 @@
   padding-right: 7px;
   padding-left: 7px;
 }
+
 .homeimg img {
   margin: auto;
 }
