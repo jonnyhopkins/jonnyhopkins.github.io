@@ -8,10 +8,11 @@
     background-color: rgba(34,34,34,0.9);
 }
 
-.dropdown, .dropdown-toggle {
-  max-height: 50px;
+@media screen and (min-width: 767px) {
+  .dropdown, .dropdown-toggle {
+    max-height: 50px;
+  }
 }
-
 .dropdown-menu > li > a {
   color: #9d9d9d;
 }
