@@ -17,9 +17,13 @@
   color: #9d9d9d;
 }
 
+#myCarousel{
+  padding-top: 50px;
+}
+
 .carousel-inner {
-  max-height: 500px;
-  min-height: 200px;
+  max-height: 800px;
+  min-height: 140px;
 }
 
 .homeimg{
