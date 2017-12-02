@@ -1,3 +1,8 @@
+.navbar, .carousel, .footer {
+  max-width: 1920px;
+  margin: auto;
+}
+
 /* Remove the navbar's default margin-bottom and rounded borders */
 #topnav {
   margin-bottom: 0;
