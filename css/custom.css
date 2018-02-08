@@ -1,4 +1,4 @@
-.navbar, .carousel, .footer {
+.navbar, .footer {
   max-width: 1920px;
   margin: auto;
 }
@@ -16,7 +16,7 @@
 }
 
 #topnav {
-  height: 100px;
+  height: 50px;
 }
 
 .navbar-brand {
@@ -28,50 +28,25 @@
   padding-left: 8px;
 }
 
-@media screen and (min-width: 767px) {
-  .dropdown, .dropdown-toggle {
-    max-height: 50px;
-  }
-}
 .dropdown-menu > li > a {
   color: #9d9d9d;
 }
 
-/*
-#myCarousel{
+  /* Body */
+
+#firstrow {
   padding-top: 50px;
 }
-*/
 
-.carousel-inner {
-  max-height: 800px;
-  min-height: 140px;
-}
-
-.homeimg{
-  padding-bottom: 10px;
-  padding-top: 0px;
-  padding-right: 7px;
-  padding-left: 7px;
-}
-
-.homeimg img {
-  margin: auto;
-}
-
-
-.caption {
+.purple {
+  background-color: rgba(72,0,72,1);
   color: white;
-  font-size: 2em;
-  position: absolute;
-  bottom: 20px;
-  left: 30px;
+  padding: 200px 100px;
 }
 
-@media screen and (max-width:770px) and (min-width:654px) {
-  .caption {
-    left: 60px;
-  }
+.purple > img {
+  width: 60%;
+  text-align: center;
 }
 
 /* Sticky footer styles
@@ -114,34 +89,3 @@ body {
   text-decoration: none;
   vertical-align: middle;
 }
-
-/*
-#thechalet {
-  top: 5px;
-  left: 30px;
-}
-
-#ourstory {
-  bottom: 20px;
-  width: 100%;
-}
-
-#theresort {
-  top: 50%;
-  width: 100%;
-}
-*/
-
-@media screen and (min-width: 700px) {
-  .navbar {
-    padding-right: 10px;
-  }
-}
-
-/* Hide the carousel text when the screen is less than 600 pixels wide */
-/* Commented out for now */
-/*@media (max-width: 600px) {*/
-/*.carousel-caption {*/
-/*  display: none;*/
-/*}*/
-/*}*/
