@@ -8,7 +8,6 @@
 
 h1, p {
   font-family: 'futuramedium';
-
 }
 
 h1 {
@@ -66,11 +65,21 @@ p {
   padding-top: 50px;
 }
 
+@media (min-width: 992px) {
+  .purple, .home-img-wrapper, .white {
+      height: 80vh;
+    }
+}
+
+@media (max-width: 991px) {
+  .purple, .white {
+    height: 80vh;
+    min-height: 550px !important;
+  }
+}
 .purple, .white {
-  height: inherit;
   padding-left: 50px;
   padding-right: 50px;
-  height: inherit;
 }
 
 .purple {
@@ -80,14 +89,11 @@ p {
 }
 
 .white {
-  background-color: #fff;
+  background-color: #ddd;
   color: rgba(57,0,57,1);
 }
 
 
-.home-img-wrapper, .home-img {
-  height: inherit;
-}
 
 .home-img-wrapper {
   padding:0;
@@ -99,13 +105,17 @@ p {
 }
 
 .content-wrapper {
-  padding-top: 150px;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 .home-img {
   width: 100%;
   height: inherit;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .icon-box {
@@ -128,7 +138,7 @@ body {
   bottom: 0;
   width: 100%;
   /* Set the fixed height of the footer here */
-  height: 50px;
+  height: 52px;
 }
 
 .navbar-text {
@@ -137,10 +147,12 @@ body {
 
 #footleft {
   margin-top: 15px;
+  padding-left: 10px;
 }
 
 #footright {
   margin-top: 10px;
+  padding-right: 10px;
 }
 
 #footright > a {
