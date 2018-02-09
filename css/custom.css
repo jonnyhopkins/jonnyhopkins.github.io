@@ -1,3 +1,30 @@
+@font-face {
+    font-family: 'futuramedium';
+    src: url('../fonts/futura_medium-webfont.woff2') format('woff2'),
+         url('../fonts/futura_medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1, p {
+  font-family: 'futuramedium';
+
+}
+
+h1 {
+  font-weight: 500;
+}
+
+p {
+  font-size: 14pt;
+  font-weight: 400;
+}
+
+/* For Font Awesome icons to align with text */
+.i {
+  vertical-align: middle;
+}
+
 .navbar, .footer {
   max-width: 1920px;
   margin: auto;
@@ -34,20 +61,57 @@
 
   /* Body */
 
-#firstrow {
+
+.container-fluid {
   padding-top: 50px;
 }
 
-.purple {
-  background-color: rgba(72,0,72,1);
-  color: white;
-  padding: 200px 100px;
+.purple, .white {
+  height: inherit;
+  padding-left: 50px;
+  padding-right: 50px;
+  height: inherit;
 }
 
-.purple > img {
-  width: 60%;
+.purple {
+  background-color: rgba(57,0,57,1);
+  color: white;
+
+}
+
+.white {
+  background-color: #fff;
+  color: rgba(57,0,57,1);
+}
+
+
+.home-img-wrapper, .home-img {
+  height: inherit;
+}
+
+.home-img-wrapper {
+  padding:0;
+}
+
+#logo {
+  height: 190px;
   text-align: center;
 }
+
+.content-wrapper {
+  padding-top: 150px;
+}
+
+.home-img {
+  width: 100%;
+  height: inherit;
+  object-fit: cover;
+}
+
+.icon-box {
+  font-size: 20px;
+}
+
 
 /* Sticky footer styles
 -------------------------------------------------- */
