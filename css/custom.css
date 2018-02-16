@@ -1,3 +1,7 @@
+@-ms-viewport {
+  width:auto!important;
+}
+
 @font-face {
     font-family: 'futuramedium';
     src: url('../fonts/futura_medium-webfont.woff2') format('woff2'),
@@ -19,13 +23,26 @@ p {
   font-weight: 400;
 }
 
+@media (max-width: 991px) {
+  h1 {
+    font-size: 20pt;
+  }
+
+  p {
+    font-size:12pt;
+  }
+
+  .i {
+    font-size: 2pt;
+  }
+}
+
 /* For Font Awesome icons to align with text */
 .i {
   vertical-align: middle;
 }
 
 .navbar, .footer {
-  max-width: 1920px;
   margin: auto;
 }
 
@@ -33,17 +50,23 @@ p {
 #topnav {
   margin-bottom: 0;
   border-radius: 0;
+  padding-right: 10px;
 }
 #topnav, .dropdown-menu {
     /*background-color: rgba(101,20,7,0.7);*/
     /*background-color: rgba(255,255,255,0.7);*/
-    background-color: rgba(50,0,50,0.9);
+    /*background-color: rgba(50,0,50,0.9);*/
     border-bottom-style: none;
 }
 
 #topnav {
+  height: 54px;
+}
+
+#nav-logo {
   height: 50px;
 }
+
 
 .navbar-brand {
   padding: 0px;
@@ -62,42 +85,57 @@ p {
 
 
 .container-fluid {
-  padding-top: 50px;
+  padding-top: 54px;
+}
+
+.purple-home, .white-home {
+  height: 80vh;
+}
+
+.purple-other, .white-other {
+  height: calc(100vh - 104px);
+  padding-top: 54px;
 }
 
 @media (min-width: 992px) {
-  .purple, .home-img-wrapper, .white {
+  .home-img-wrapper {
       height: 80vh;
     }
+  .other-img-wrapper {
+    height: calc(100vh - 104px);
+    padding-top: 54px;
+  }
 }
 
 @media (max-width: 991px) {
   .purple, .white {
-    height: 80vh;
-    min-height: 550px !important;
+    min-height: 550px;
   }
 }
+
 .purple, .white {
-  padding-left: 50px;
-  padding-right: 50px;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
 .purple {
   background-color: rgba(57,0,57,1);
   color: white;
+  border-width: 1px;
+  border-color: rgba(57,0,57,1);
+  border-style: solid;
 
 }
 
 .white {
-  background-color: #ddd;
+  background-color: #fff;
   color: rgba(57,0,57,1);
 }
 
-
-
-.home-img-wrapper {
+.img-wrapper {
   padding:0;
 }
+
 
 #logo {
   height: 190px;
@@ -112,10 +150,12 @@ p {
 }
 
 .home-img {
-  width: 100%;
   height: inherit;
   -o-object-fit: cover;
      object-fit: cover;
+  width: 100%;
+  max-width: none;
+  height: 100%;
 }
 
 .icon-box {
@@ -148,6 +188,10 @@ body {
 #footleft {
   margin-top: 15px;
   padding-left: 10px;
+}
+
+#footleft > P {
+  font-size: 12pt;
 }
 
 #footright {
