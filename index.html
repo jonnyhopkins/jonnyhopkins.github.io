@@ -224,39 +224,45 @@
     </div>
   </footer>
 
+  <div class="modal fade" id="contact" role="dialog">
+    <div class="modal-dialog">
+
+      <form action="https://getsimpleform.com/messages?form_api_token=1be1798aabb21d839781b27b5b5d30e8" method="post">
+        <input type='hidden' name='redirect_to' value='#' />
+
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4>Contact</h4>
+          </div>
+          <div class="modal-body">
+            <div class="input-group">
+              <span class="input-group-addon" id="basic-addon-1">Name</span>
+              <input type="text" name="Name" class="form-control" placeholder="Name" aria-describedby="basic-addon-1">
+            </div>
+            <br/>
+            <div class="input-group">
+              <span class="input-group-addon" id="basic-addon-2">@</span>
+              <input type="email" name="email" class="form-control" placeholder="example@domain.com" aria-describedby="basic-addon-2">
+            </div>
+            <br/>
+            <div class="input-group">
+              <span class="input-group-addon" id="basic-addon-3">Message</span>
+              <textarea class="form-control" name="message" rows="4" placeholder="Message..." area-describedby="basic-addon-3"></textarea>
+            </div>
+          </div>
+
+          <div class="modal-footer">
+            <button type="submit" class="btn btn-primary">Submit</button>
+            <a class="btn btn-default" data-dismiss="modal">Close</a>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+
   <!-- Bootstrap core JavaScript
   ================================================== -->
   <!-- Placed at the end of the document so the pages load faster -->
-  <div class="modal fade" id="contact" role="dialog">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h4>Contact</h4>
-        </div>
-        <div class="modal-body">
-          <div class="input-group">
-            <span class="input-group-addon" id="basic-addon-1">Name</span>
-            <input type="text" class="form-control" placeholder="Name" aria-describedby="basic-addon-1">
-          </div>
-          <br/>
-          <div class="input-group">
-            <span class="input-group-addon" id="basic-addon-2">@</span>
-            <input type="email" class="form-control" placeholder="example@domain.com" aria-describedby="basic-addon-2">
-          </div>
-          <br/>
-          <div class="input-group">
-            <span class="input-group-addon" id="basic-addon-3">Message</span>
-            <textarea class="form-control" rows="4" placeholder="Message..." area-describedby="basic-addon-3"></textarea>
-          </div>
-        </div>
-
-        <div class="modal-footer">
-          <button type="submit" class="btn btn-primary">Submit</button>
-          <a class="btn btn-default" data-dismiss="modal">Close</a>
-        </div>
-      </div>
-    </div>
-  </div>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
