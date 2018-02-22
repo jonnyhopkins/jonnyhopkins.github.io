@@ -35,7 +35,7 @@
         <span class="icon-bar"></span>
         </button>
 
-        <a class="navbar-brand" href="index.html"><img id="nav-logo" src="icons/logo-white.png" alt="Logo" /></a>
+        <a class="navbar-brand" href="index.html"><img id="nav-logo" src="icons/Logo_Notext_White.png" alt="Logo" /></a>
 
         <!--
         <a class="navbar-brand" href="#">Chalet Aiglon</a>
@@ -44,7 +44,9 @@
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav navbar-right">
           <li><a href="the-chalet.html">The Chalet</a></li>
-          <li><a href="about-us.html">About Us</a></li>
+          <li><a href="prices.html">Prices</a></li>
+          <li class="active"><a href="about-us.html">About Us</a></li>
+          <li><a href="#contact" data-toggle="modal">Contact</a></li>
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img id="langico" src="icons/United-Kingdom.png" alt="Language English" /> EN <span class="caret"></span></a>
             <ul class="dropdown-menu">
@@ -73,6 +75,42 @@
       <div class="col-md-4 img-wrapper other-img-wrapper">
         <img class="home-img img-responsive " src="images/IMG_9928.jpg" alt="Photo of Us" />
       </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="contact" role="dialog">
+    <div class="modal-dialog">
+
+      <form action="https://getsimpleform.com/messages?form_api_token=1be1798aabb21d839781b27b5b5d30e8" method="post">
+        <input type='hidden' name='redirect_to' value='http://www.chaletaiglon.com/thankyou.html'  />
+
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4>Contact</h4>
+          </div>
+          <div class="modal-body">
+            <div class="input-group">
+              <span class="input-group-addon" id="basic-addon-1">Name</span>
+              <input type="text" name="Name" class="form-control" placeholder="Name" aria-describedby="basic-addon-1">
+            </div>
+            <br/>
+            <div class="input-group">
+              <span class="input-group-addon" id="basic-addon-2">@</span>
+              <input type="email" name="email" class="form-control" placeholder="example@domain.com" aria-describedby="basic-addon-2">
+            </div>
+            <br/>
+            <div class="input-group">
+              <span class="input-group-addon" id="basic-addon-3">Message</span>
+              <textarea class="form-control" name="message" rows="4" placeholder="Message..." area-describedby="basic-addon-3"></textarea>
+            </div>
+          </div>
+
+          <div class="modal-footer">
+            <button type="submit" class="btn btn-primary">Submit</button>
+            <a class="btn btn-default" data-dismiss="modal">Close</a>
+          </div>
+        </div>
+      </form>
     </div>
   </div>
 

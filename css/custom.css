@@ -97,6 +97,16 @@ p {
   padding-top: 54px;
 }
 
+#price-wrapper {
+  height: calc(100vh - 104px);
+}
+
+@media (min-width: 768px) {
+  #price-wrapper {
+    padding-top: 54px;
+  }
+}
+
 @media (min-width: 992px) {
   .home-img-wrapper {
       height: 80vh;
@@ -113,7 +123,7 @@ p {
   }
 }
 
-.purple, .white {
+.purple, .white, .white-prices {
   padding-left: 5%;
   padding-right: 5%;
 }
@@ -130,6 +140,10 @@ p {
 .white {
   background-color: #fff;
   color: rgba(57,0,57,1);
+}
+
+.white-prices {
+  background-color: rgba(225, 225, 225, 0.6);
 }
 
 .img-wrapper {
@@ -160,6 +174,11 @@ p {
 
 .icon-box {
   font-size: 20px;
+}
+
+#price-wrapper {
+  background-image: url('../images/chaletview.jpg');
+  background-color: #ccc;
 }
 
 
