@@ -101,6 +101,7 @@ i {
 
 .container-fluid {
   padding-top: 50px;
+  overflow: auto;
 }
 
 .purple-home, .white-home {
@@ -205,8 +206,8 @@ i {
 }
 
 #price-wrapper {
-  background-image: url('../images/chaletview.jpg');
-  background-color: #ccc;
+  /*background-image: url('../images/chaletview.jpg');
+  background-color: #ccc;*/
 }
 
 /* Sticky footer styles
@@ -227,7 +228,8 @@ body {
   bottom: 0;
   width: 100%;
   /* Set the fixed height of the footer here */
-  height: 52px;
+  height: 50px;
+  margin: 0;
 }
 
 .navbar-text {
