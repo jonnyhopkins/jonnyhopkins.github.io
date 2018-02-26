@@ -1,95 +1,233 @@
-.navbar, .carousel, .footer {
-  max-width: 1920px;
+@-ms-viewport {
+  width: auto !important;
+}
+
+@font-face {
+  font-family: 'futuramedium';
+  src: url('../fonts/futura_medium-webfont.woff2') format('woff2'), url('../fonts/futura_medium-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+h1, p {
+  font-family:'futuramedium', sans-serif;
+}
+
+h1 {
+  font-weight: 500;
+}
+
+p {
+  font-size: 14pt;
+  font-weight: 400;
+}
+
+.content-wrapper > ul > li {
+  font-size: 12pt;
+  font-family: futuramedium, sans-serif;
+  font-weight: 500;
+}
+
+.hr-white {
+  border-top-color: white;
+}
+
+.hr-purple {
+  border-top-color: rgba(57,0,57,1);
+}
+
+@media (max-width: 991px) {
+  h1 {
+    font-size: 20pt;
+  }
+  p {
+    font-size: 12pt;
+  }
+  i {
+    font-size: 2pt;
+  }
+}
+
+/* For Font Awesome icons to align with text */
+
+i {
+  vertical-align: middle;
+}
+
+.navbar, .footer {
   margin: auto;
 }
 
 /* Remove the navbar's default margin-bottom and rounded borders */
+
 #topnav {
   margin-bottom: 0;
   border-radius: 0;
-}
-#topnav, .dropdown-menu {
-    /*background-color: rgba(101,20,7,0.7);*/
-    /*background-color: rgba(255,255,255,0.7);*/
-    background-color: rgba(50,0,50,0.9);
-    border-bottom-style: none;
+  padding-right: 10px;
 }
 
-#topnav {
-  height: 100px;
+#topnav, .dropdown-menu {
+  /*background-color: rgba(101,20,7,0.7);*/
+  /*background-color: rgba(255,255,255,0.7);*/
+  /*background-color: rgba(50,0,50,0.9);*/
+  border-bottom-style: none;
 }
 
 .navbar-brand {
   padding: 0px;
 }
-.navbar-brand > img {
-  height: 100px;
+
+.navbar-brand>img {
+  height: 50px;
   padding: 4px;
   padding-left: 8px;
 }
 
-@media screen and (min-width: 767px) {
-  .dropdown, .dropdown-toggle {
-    max-height: 50px;
-  }
+.dropdown-menu {
+  padding: 0;
+  margin: 0;
 }
-.dropdown-menu > li > a {
+
+.dropdown-menu>li>a {
   color: #9d9d9d;
 }
 
-/*
-#myCarousel{
+.navbar-nav li a {
+  line-height: 3em;
+  padding: 5px 10px;
+}
+
+/* Body */
+
+.container-fluid {
   padding-top: 50px;
 }
-*/
 
-.carousel-inner {
-  max-height: 800px;
-  min-height: 140px;
+.purple-home, .white-home {
+  height: 80vh;
 }
 
-.homeimg{
-  padding-bottom: 10px;
-  padding-top: 0px;
-  padding-right: 7px;
-  padding-left: 7px;
+.purple-other, .white-other {
+  height: calc(100vh - 100px);
+  padding-top: 50px;
 }
 
-.homeimg img {
-  margin: auto;
+#price-wrapper {
+  height: calc(100vh - 100px);
 }
 
 
-.caption {
-  color: white;
-  font-size: 2em;
-  position: absolute;
-  bottom: 20px;
-  left: 30px;
-}
-
-@media screen and (max-width:770px) and (min-width:654px) {
-  .caption {
-    left: 60px;
+@media (min-width: 768px) {
+  #price-wrapper {
+    padding-top: 50px;
   }
+}
+
+@media (min-width: 992px) {
+  .home-img-wrapper {
+    height: 80vh;
+  }
+  .other-img-wrapper {
+    height: calc(100vh - 100px);
+    padding-top: 50px;
+  }
+}
+
+@media (max-width: 991px) {
+  .purple, .white {
+    min-height: 550px;
+  }
+}
+
+.purple, .white, .white-prices {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.purple {
+  background-color: rgba(57, 0, 57, 1);
+  color: white;
+  border-width: 1px;
+  border-color: rgba(57, 0, 57, 1);
+  border-style: solid;
+}
+
+.white {
+  background-color: #fff;
+  color: rgba(57, 0, 57, 1);
+}
+
+.white-prices {
+  background-color: rgba(225, 225, 225, 0.6);
+}
+
+.white-prices > p {
+  font-size: 14px;
+  text-align: center;
+}
+
+.img-wrapper {
+  padding: 0;
+}
+
+#logo {
+  height: 190px;
+  text-align: center;
+}
+
+.content-wrapper {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+
+
+.home-img {
+  height: inherit;
+  -o-object-fit: cover;
+  object-fit: cover;
+  width: 100%;
+
+}
+
+.icon-box {
+  font-size: 20px;
+  padding: 0 0px 20px 3px;
+
+}
+
+@media (max-width: 420px) {
+  .icon-box > p {
+    font-size: 12px;
+  }
+}
+
+#price-wrapper {
+  background-image: url('../images/chaletview.jpg');
+  background-color: #ccc;
 }
 
 /* Sticky footer styles
 -------------------------------------------------- */
+
 html {
   position: relative;
   min-height: 100%;
 }
+
 body {
   /* Margin bottom by footer height */
   margin-bottom: 50px;
 }
+
 .footer {
   position: absolute;
   bottom: 0;
   width: 100%;
   /* Set the fixed height of the footer here */
-  height: 50px;
+  height: 52px;
 }
 
 .navbar-text {
@@ -98,50 +236,26 @@ body {
 
 #footleft {
   margin-top: 15px;
+  padding-left: 10px;
+}
+
+#footleft>P {
+  font-size: 12pt;
 }
 
 #footright {
   margin-top: 10px;
+  padding-right: 10px;
 }
 
-#footright > a {
+#footright>a {
   padding-right: 5px;
 }
 
 /* Stops fontawesome icons being blue and having link highlights */
-.navbar-text > a {
+
+.navbar-text>a {
   color: inherit;
   text-decoration: none;
   vertical-align: middle;
 }
-
-/*
-#thechalet {
-  top: 5px;
-  left: 30px;
-}
-
-#ourstory {
-  bottom: 20px;
-  width: 100%;
-}
-
-#theresort {
-  top: 50%;
-  width: 100%;
-}
-*/
-
-@media screen and (min-width: 700px) {
-  .navbar {
-    padding-right: 10px;
-  }
-}
-
-/* Hide the carousel text when the screen is less than 600 pixels wide */
-/* Commented out for now */
-/*@media (max-width: 600px) {*/
-/*.carousel-caption {*/
-/*  display: none;*/
-/*}*/
-/*}*/

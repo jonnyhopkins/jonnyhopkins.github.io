@@ -1,13 +1,15 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
+  <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-110486248-1"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
     gtag('js', new Date());
 
     gtag('config', 'UA-110486248-1');
@@ -18,8 +20,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/custom.css">
-  <link rel="shortcut icon" type="image/png" href="icons/favicon.png"/>
-  <script src="https://use.fontawesome.com/e3da1056ee.js"></script>
+  <link rel="shortcut icon" type="image/png" href="icons/favicon.png" />
+  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+  <!--<script src="https://use.fontawesome.com/e3da1056ee.js"></script>-->
 </head>
 
 <body>
@@ -31,15 +34,18 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="#"><img src="icons/logo-white.png" alt="Logo" /></a>
       </div>
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav navbar-right">
+          <li><a href="the-chalet-fr.html">Le Chalet</a></li>
+          <li><a href="prices-fr.html">Tarifs</a></li>
+          <li><a href="about-us-fr.html">A Propos De Nous</a></li>
+          <li><a href="#contact" data-toggle="modal">Contact</a></li>
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img id="langico" src="icons/France.png" alt="Langue Français" /> FR <span class="caret"></span></a>
             <ul class="dropdown-menu">
               <li><a href="index.html"><img src="icons/United-Kingdom.png" alt="Language English" /> EN</a></li>
-              <li><a href="index-fr.html"><img src="icons/France.png" alt="Langue Français" /> FR</a></li>
+              <li><a href="#"><img src="icons/France.png" alt="Langue Français" /> FR</a></li>
             </ul>
           </li>
         </ul>
@@ -47,113 +53,210 @@
     </nav>
   </div>
 
-  <div id="myCarousel" class="carousel slide" data-ride="carousel">
-    <!-- Indicators -->
-    <ol class="carousel-indicators">
-      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-      <li data-target="#myCarousel" data-slide-to="1"></li>
-    </ol>
-
-    <!-- Wrapper for slides -->
-    <div class="carousel-inner" role="listbox">
-      <div class="item active">
-        <img src="images/chaletconstruction.jpg" alt="The Chalet">
+  <div class="container-fluid">
+    <div class="row ">
+      <div class="col-md-4 purple purple-home text-center">
+        <div class="content-wrapper">
+          <img id="logo" src="icons/logo-white.png" alt="Chalet Aiglon Logo" />
+          <br/><br/>
+          <p>Bienvenue au Chalet Aiglon : un nouveau chalet de cinq chambres de luxe. Ouverture à La Rosière prévue pour l’hiver 2018-19.</p>
+        </div>
       </div>
+      <div class="col-md-8 img-wrapper home-img-wrapper">
+        <img class="home-img img-responsive" src="images/ChaletProjectionSnow.jpg" alt="Projection of the finished chalet" />
+      </div>
+      <div class="col-md-8 img-wrapper home-img-wrapper hidden-xs hidden-sm">
+        <img class="home-img img-responsive" src="images/DSC_0279.JPG" alt="View from La Rosière" />
+      </div>
+      <div class="col-md-4 white white-home">
+        <div class="content-wrapper">
+          <h1>Un Panorama Exceptionnel</h1>
+          <hr class="hr-purple" />
+          <p>Situées dans le village ensoleillé de La Rosière en Haute Tarentaise, nos chambres d’hôtes vous offrent un logement de qualité avec une service sur mesure et une ambiance conviviale.</p>
+          <p>Nouvellement rénové et agrandi, le Chalet Aiglon sera le lieu parfait pour se détendre après une journée en montagne.</p>
+          <p>Nos balcons exposés sud-ouest vous permettront de profiter au maximum d’une vue panorama exceptionnelle sur la vallée de la tarentaise et de magnifiques couchers de soleil.</p>
+        </div>
+      </div>
+      <div class="col-md-8 img-wrapper home-img-wrapper visible-xs visible-sm">
+        <img class="home-img img-responsive" src="images/DSC_0279.JPG" alt="View from La Rosière" />
+      </div>
+    </div>
+    <br/><br/>
 
-      <div class="item">
-        <img src="images/chaletview.jpg" alt="The View From The Chalet">
+    <!-- icons for larger screens -->
+    <div class="row hidden-xs">
+      <div class=" col-sm-4 icon-box text-center">
+        <i class="fa fa-home fa-2x"></i>
+        <p>Sleeps 12-14</p>
+      </div>
+      <div class=" col-sm-4 icon-box text-center">
+        <i class="fa fa-bed fa-2x"></i>
+        <p>5 Bedrooms</p>
+      </div>
+      <div class=" col-sm-4 icon-box text-center">
+        <i class="fa fa-shower fa-2x"></i>
+        <p>All Ensuite</p>
+      </div>
+      <div class=" col-sm-4 icon-box text-center">
+        <i class="fa fa-coffee fa-2x"></i>
+        <p>Breakfast Included</p>
+      </div>
+      <div class=" col-sm-4 icon-box text-center">
+        <i class="fa fa-utensils fa-2x"></i>
+        <p>Optional Dinner</p>
+      </div>
+      <div class=" col-sm-4 icon-box text-center">
+        <i class="fa fa-wifi fa-2x"></i>
+        <p>Free Wifi</p>
+      </div>
+      <div class=" col-sm-4 icon-box text-center">
+        <i class="fa fa-car fa-2x"></i>
+        <p>Covered Parking</p>
+      </div>
+      <div class=" col-sm-4 icon-box text-center">
+        <i class="fab fa-pagelines fa-2x"></i>
+        <p>Spa</p>
+      </div>
+      <div class=" col-sm-4 icon-box text-center">
+        <i class="fas fa-lock fa-2x"></i>
+        <p>Heated Lockers</p>
       </div>
     </div>
 
-    <!-- Left and right controls -->
-    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-  </div>
-
-  <div class="container text-center">
-    <div class="row">
-      <div class="col-sm-4">
+    <!-- Icons for mobile -->
+    <div class="row visible-xs">
+      <div class="col-xs-4  icon-box text-center">
+        <i class="fa fa-home  "></i>
+        <p>Sleeps 12-14</p>
       </div>
-      <div class="col-sm-4">
-        <h3>Chalet Aiglon - Bientôt à La Rosière!</h3>
-        <h4><i class="fa fa-envelope-o"></i> Inscription Newsletter.</h4>
-        <p>Recevrez les derniers infos et nos meilleurs offres directe dans votre boîte mail.</p>
-        <p><img src="icons/Logo-Burgundy.png" style="width:16px;height:16px"/></p>
-
-        <!-- Begin MailChimp Signup Form -->
-        <div id="mc_embed_signup">
-          <form action="https://chaletaiglon.us17.list-manage.com/subscribe/post?u=c81df12420d4123ce359fce55&amp;id=a6a9fc027d" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-            <div id="mc_embed_signup_scroll">
-        <div class="input-group">
-        	<span class="input-group-addon" id="basic-addon1">@</span>
-        	<input type="email" placeholder="Address E-Mail" name="EMAIL" class="form-control" id="mce-EMAIL" aria-describedby="basic-addon1">
-        </div>
-        <div class="input-group">
-        	<span class="input-group-addon" id="basic-addon1">Prénom</span>
-        	<input type="text" placeholder="Prénom" name="LNAME" class="form-control" id="mce-LNAME" aria-describedby="basic-addon1">
-        </div>
-        <div class="input-group">
-        	<span class="input-group-addon" id="basic-addon1">Nom</span>
-        	<input type="text" placeholder="Nom" name="FNAME" class="form-control" id="mce-FNAME" aria-describedby="basic-addon1">
-        </div>
-        	<div id="mce-responses" class="clear">
-        		<div class="response" id="mce-error-response" style="display:none"></div>
-        		<div class="response" id="mce-success-response" style="display:none"></div>
-        	</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-            <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_c81df12420d4123ce359fce55_a6a9fc027d" tabindex="-1" value=""></div>
-            <button type="button submit" class="btn btn-default">OK</button>
-            </div>
-        </form>
-        </div>
-        <script type='text/javascript' src='http://s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
-        <!--End mc_embed_signup-->
-
-        <p>Pour tout renseignement, veuillez nous contacter à <a href="mailto:&#99;&#111;&#110;&#116;&#97;&#99;&#116;&#64;&#99;&#104;&#97;&#108;&#101;&#116;&#97;&#105;&#103;&#108;&#111;&#110;&#46;&#99;&#111;&#109;">&#99;&#111;&#110;&#116;&#97;&#99;&#116;&#64;&#99;&#104;&#97;&#108;&#101;&#116;&#97;&#105;&#103;&#108;&#111;&#110;&#46;&#99;&#111;&#109;</a></p>
-        <br>
+      <div class="col-xs-4  icon-box text-center">
+        <i class="fa fa-bed  "></i>
+        <p>5 Bedrooms</p>
       </div>
-      <div class="col-sm-4">
+      <div class="col-xs-4  icon-box text-center">
+        <i class="fa fa-shower  "></i>
+        <p>All Ensuite</p>
       </div>
-    </div>
-    <div class="row">
-      <div class="col-sm-4 homeimg">
-        <img src="images/IMG_0184.jpg" class="img-responsive" alt="View Of The Valley">
+      <div class="col-xs-4  icon-box text-center">
+        <i class="fa fa-coffee  "></i>
+        <p>Breakfast Included</p>
       </div>
-
-      <div class="col-sm-4 homeimg">
-        <img src="images/ChaletProjectionSnow.jpg" class="img-responsive" alt="The Chalet">
+      <div class="col-xs-4  icon-box text-center">
+        <i class="fa fa-utensils  "></i>
+        <p>Optional Dinner</p>
       </div>
-
-      <div class="col-sm-4 homeimg">
-        <img src="images/DSCF1145.jpg" class="img-responsive" alt="View Of The Resort">
+      <div class="col-xs-4  icon-box text-center">
+        <i class="fa fa-wifi  "></i>
+        <p>Free Wifi</p>
+      </div>
+      <div class="col-xs-4  icon-box text-center">
+        <i class="fa fa-car  "></i>
+        <p>Covered Parking</p>
+      </div>
+      <div class="col-xs-4  icon-box text-center">
+        <i class="fab fa-pagelines"></i>
+        <p>Spa</p>
+      </div>
+      <div class="col-xs-4 icon-box text-center">
+        <i class="fas fa-lock"></i>
+        <p>Heated Lockers</p>
       </div>
 
     </div>
-    <br>
+    <br/><br/>
+    <div class="row ">
+      <div class="col-md-4 purple purple-home ">
+        <div class="content-wrapper">
+          <h1>Cinq Chambres Spacieuses</h1>
+          <hr class="hr-white" />
+          <p>Construit sur un modèle d’architecture traditionnel, propre à la tarentaise, le chalet, avec ses nombreuses fenêtres apportant une luminosité exceptionnelle, offre un style moderne et chaleureux.</p>
+          <p>Chacune de nos cinq chambres dispose de son propre style, son balcon et sa salle de bain attenante ainsi qu’un casier à ski personnel équipé de chauffe-chaussures.</p>
+        </div>
+      </div>
+      <div class="col-md-8 img-wrapper home-img-wrapper">
+        <img class="img-responsive home-img" src="images/chaletview.jpg" alt="View from the chalet" />
+      </div>
+      <div class="col-md-8 img-wrapper home-img-wrapper">
+        <img class="img-responsive home-img hidden-sm hidden-xs" src="images/relaxation-686392_1280.jpg" alt="Spa" />
+      </div>
+      <div class="col-md-4 white white-home">
+        <div class="content-wrapper">
+          <h1>Détendez-Vous, On S’Occupe De Tout</h1>
+          <hr class="hr-purple" />
+          <p>Nous disposons d’un espace balnéo comprenant hammam et salle de massage, sans oublier notre jacuzzi depuis lequel vous pourrez à nouveau apprécier le panorama sur la vallée de la Tarentaise.</p>
+          <p>Vous pourrez profiter de nos petits déjeuners tous les matins autour de notre table d’hôtes. Nous proposons un buffet froid (yaourts, salades de fruits, céréales etc…) mais également différentes option de plats chauds (oeufs, gaufres, omelettes,
+            etc…). Un goûter copieux au coin de la cheminée vous attendra bien sûr en après-ski. Nous offrons également la possibilité de dîner avec nous, selon un menu établi à l’avance par nos soins, 6 soirs par semaine.</p>
+        </div>
+      </div>
+      <div class="col-md-8 img-wrapper home-img-wrapper visible-sm visible-xs">
+        <img class="img-responsive home-img" src="images/relaxation-686392_1280.jpg" alt="Spa" />
+      </div>
+      <div class="col-md-4 purple purple-home">
+        <div class="content-wrapper">
+          <h1>De la Place sur les Pistes</h1>
+          <hr class="hr-white" />
+          <p>Notre chalet est idéalement situé dans la station (200m des arrêts navette de la station), ce qui facilitera vos trajets jusqu’au front de neige et vous évitera de marcher trop longtemps en tenues de ski.</p>
+          <p>L’Espace San Bernardo offre de nombreuses pistes accessibles pour tous les âges et tous les niveaux. De la petite piste verte gratuite et facile aux vertigineuses pistes noires du domaine Italien, l’espace San Bernardo offre un panel incroyable de possibilités en terme d’aventures et de découvertes.</p>
+          <p>La Rosière fait partie des quelques stations capable de proposer des sorties Héliski, grâce à sa proximité avec l’Italie. Sensations fortes et souvenirs inoubliables garantis&nbsp!</p>
+        </div>
+      </div>
+      <div class="col-md-8 img-wrapper home-img-wrapper">
+        <img class="img-responsive home-img" src="images/IMG_0301.JPG" alt="Skier Overlooking Italy">
+      </div>
     </div>
   </div>
 
   <footer class="footer navbar-fixed-bottom navbar-inverse">
-    <div class="container">
-      <div class="navbar-text pull-left" id="footleft">
-        <p><strong>&copy; The Nest 2017</strong></p>
-      </div>
-      <div class="navbar-text pull-right" id="footright">
-        <a href="https://www.facebook.com/AiglonRosiere" target="_blank"><i class="fa fa-facebook-square fa-2x"></i></a>
-        <a href="https://twitter.com/ChaletAiglon" target="_blank"><i class="fa fa-twitter fa-2x"></i></a>
-        <a href="https://www.instagram.com/chaletaiglon/" target="_blank"><i class="fa fa-instagram fa-2x"></i></a>
-      </div>
+    <div class="navbar-text pull-left" id="footleft">
+      <p>&copy; The Nest 2017</p>
+    </div>
+    <div class="navbar-text pull-right" id="footright">
+      <a href="https://www.facebook.com/AiglonRosiere" target="_blank"><i class="fab fa-facebook-square fa-2x"></i></a>
+      <a href="https://twitter.com/ChaletAiglon" target="_blank"><i class="fab fa-twitter fa-2x"></i></a>
+      <a href="https://www.instagram.com/chaletaiglon/" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
     </div>
   </footer>
+
+  <div class="modal fade" id="contact" role="dialog">
+    <div class="modal-dialog">
+
+      <form action="https://getsimpleform.com/messages?form_api_token=1be1798aabb21d839781b27b5b5d30e8" method="post">
+        <input type='hidden' name='redirect_to' value='http://www.chaletaiglon.com/merci.html' />
+
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4>Contact</h4>
+          </div>
+          <div class="modal-body">
+            <div class="input-group">
+              <span class="input-group-addon" id="basic-addon-1">Nom</span>
+              <input type="text" name="Name" class="form-control" placeholder="Nom" aria-describedby="basic-addon-1">
+            </div>
+            <br/>
+            <div class="input-group">
+              <span class="input-group-addon" id="basic-addon-2">@</span>
+              <input type="email" name="email" class="form-control" placeholder="example@domain.com" aria-describedby="basic-addon-2">
+            </div>
+            <br/>
+            <div class="input-group">
+              <span class="input-group-addon" id="basic-addon-3">Message</span>
+              <textarea class="form-control" name="message" rows="4" placeholder="Message..." area-describedby="basic-addon-3"></textarea>
+            </div>
+          </div>
+
+          <div class="modal-footer">
+            <button type="submit" class="btn btn-primary">Envoyer</button>
+            <a class="btn btn-default" data-dismiss="modal">Fermer</a>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
 
   <!-- Bootstrap core JavaScript
   ================================================== -->
   <!-- Placed at the end of the document so the pages load faster -->
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
 
