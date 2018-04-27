@@ -206,8 +206,13 @@ i {
 }
 
 #price-wrapper {
-  background-image: url('../images/chaletviewLarge.jpg');
-  background-color: #ccc;
+  /*background-image: url('../images/chaletview.jpg');*/
+  /*background-color: #ccc;*/
+  background: url('../images/chaletview.jpg') no-repeat center center fixed;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
 }
 
 /* Sticky footer styles
