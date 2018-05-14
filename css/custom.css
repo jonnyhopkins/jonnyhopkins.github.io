@@ -77,7 +77,7 @@ i {
 
 @media (min-width: 768px) {
   #topnav {
-    height: 90px;
+    min-height: 90px;
   }
 
   #topnav a {
@@ -95,7 +95,8 @@ i {
 }
 @media (max-width: 767px) {
   #topnav {
-    height: 50px;
+    height:auto;
+    min-height: 50px;
   }
 
   .navbar-brand {
