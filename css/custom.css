@@ -94,6 +94,9 @@ i {
   }
 }
 @media (max-width: 767px) {
+  .navbar-inverse .navbar-collapse {
+    background-color: rgba(0,0,0,0.9);
+  }
   #topnav {
     height:auto;
     min-height: 50px;
@@ -136,12 +139,12 @@ i {
 
 .navbar-inverse .navbar-nav>.active> a,
 .navbar-inverse .navbar-nav>.active> a:focus,
-.navbar-inverse .navbar-nav>.active> a:hover {
+.navbar-inverse .navbar-nav>.active> a:hover
+{
   background: rgba(0,0,0,0.5);
 }
 
-#myNavbar > ul > li
-{
+.menu-selector > ul > li {
     width: 100px !important;
     text-align: center;
 }
