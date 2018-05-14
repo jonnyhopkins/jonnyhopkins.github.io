@@ -9,7 +9,7 @@
   font-style: normal;
 }
 
-h1, p {
+h1, p,{
   font-family:'futuramedium', sans-serif;
 }
 
@@ -36,7 +36,7 @@ p {
   border-top-color: rgba(57,0,57,1);
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1024px) {
   h1 {
     font-size: 20pt;
   }
@@ -63,24 +63,64 @@ i {
 #topnav {
   margin-bottom: 0;
   border-radius: 0;
-  padding-right: 10px;
+  padding-right: 20px;
+  height: 90px;
 }
 
-#topnav, .dropdown-menu {
-  /*background-color: rgba(101,20,7,0.7);*/
-  /*background-color: rgba(255,255,255,0.7);*/
-  /*background-color: rgba(50,0,50,0.9);*/
-  border-bottom-style: none;
+#topnav a {
+  color: white;
 }
 
 .navbar-brand {
-  padding: 0px;
+  padding: 0;
 }
 
-.navbar-brand>img {
-  height: 50px;
-  padding: 4px;
-  padding-left: 8px;
+@media (min-width: 768px) {
+  #topnav {
+    height: 90px;
+  }
+
+  #topnav a {
+    line-height: 80px;
+  }
+
+  .navbar-brand {
+    padding-top: 5px;
+    padding-left: 5px;
+  }
+
+  .navbar-brand > img {
+    height: 80px;
+  }
+}
+@media (max-width: 767px) {
+  #topnav {
+    height: 50px;
+  }
+
+  .navbar-brand {
+    padding-top: 2px;
+    padding-left: 2px;
+  }
+
+  .navbar-brand > img {
+    height: 46px;
+  }
+}
+
+#topnav, .dropdown-menu {
+  background-color: rgba(0,0,0,0.3);
+  border-bottom-style: none;
+}
+
+.langico {
+  position: relative;
+  top: -4px;
+}
+
+.nav a {
+  font-size: 12pt;
+  font-family: futuramedium;
 }
 
 .dropdown-menu {
@@ -90,6 +130,19 @@ i {
 
 .dropdown-menu>li>a {
   color: #9d9d9d;
+  line-height: 50px !important;
+}
+
+.navbar-inverse .navbar-nav>.active> a,
+.navbar-inverse .navbar-nav>.active> a:focus,
+.navbar-inverse .navbar-nav>.active> a:hover {
+  background: rgba(0,0,0,0.5);
+}
+
+#myNavbar > ul > li
+{
+    width: 100px !important;
+    text-align: center;
 }
 
 .navbar-nav li a {
@@ -100,7 +153,7 @@ i {
 /* Body */
 
 .container-fluid {
-  padding-top: 50px;
+  /*padding-top: 50px;*/
   overflow: auto;
 }
 
@@ -109,18 +162,18 @@ i {
 }
 
 .purple-other, .white-other {
-  height: calc(100vh - 100px);
+  height: calc(100vh - 50px);
   padding-top: 50px;
 }
 
 #price-wrapper {
-  height: calc(100vh - 100px);
+  height: calc(100vh - 50px);
 }
 
 
 @media (min-width: 768px) {
   #price-wrapper {
-    padding-top: 50px;
+    padding-top: 150px;
   }
 }
 
@@ -129,7 +182,7 @@ i {
     height: 80vh;
   }
   .other-img-wrapper {
-    height: calc(100vh - 100px);
+    height: calc(100vh - 50px);
     padding-top: 50px;
   }
 }
@@ -175,6 +228,7 @@ i {
   height: 190px;
   text-align: center;
 }
+
 
 .content-wrapper {
   position: relative;

@@ -20,13 +20,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/custom.css">
+  <link rel="stylesheet" href="css/jquery.bsPhotoGallery.css">
+  <link rel="stylesheet" href="css/ekko-lightbox.css">
   <link rel="shortcut icon" type="image/png" href="icons/favicon.png" />
   <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
-  <!--<script src="https://use.fontawesome.com/e3da1056ee.js"></script>-->
 
   <link rel="alternate" hreflang="en" href="http://www.chaletaiglon.com/the-chalet.html" />
   <link rel="alternate" hreflang="fr" href="http://www.chaletaiglon.com/the-chalet-fr.html" />
-  <link rel="alternate" hreflang="x-default" href="http://www.chaletaiglon.com/the-chalet.html"/>
+  <link rel="alternate" hreflang="x-default" href="http://www.chaletaiglon.com/the-chalet.html" />
 </head>
 
 <body>
@@ -47,10 +48,10 @@
           <li><a href="about-us-fr.html">A Propos De Nous</a></li>
           <li><a href="#contact" data-toggle="modal">Contact</a></li>
           <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img id="langico" src="icons/France.png" alt="Langue Français" /> FR <span class="caret"></span></a>
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img class="langico" src="icons/France.png" alt="Langue Français" /> FR <span class="caret"></span></a>
             <ul class="dropdown-menu">
-              <li><a href="the-chalet.html"><img src="icons/United-Kingdom.png" alt="Language English" /> EN</a></li>
-              <li><a href="#"><img src="icons/France.png" alt="Langue Français" /> FR</a></li>
+              <li><a href="the-chalet.html"><img class="langico" src="icons/United-Kingdom.png" alt="Language English" /> EN</a></li>
+              <li><a href="#"><img class="langico" src="icons/France.png" alt="Langue Français" /> FR</a></li>
             </ul>
           </li>
         </ul>
@@ -98,6 +99,27 @@
       </div>
       <div class="col-md-8 img-wrapper home-img-wrapper">
         <img class="home-img home-img-wrapper" src="images/spa.jpeg" alt="The Spa" />
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8">
+        <div class="row">
+          <a href="images/Ground-Floor.png" data-toggle="lightbox" data-gallery="floorplan-gallery" class="col-sm-4">
+            <img src="images/Ground-Floor.png" class="img-responsive">
+          </a>
+          <a href="images/First-Floor.png" data-toggle="lightbox" data-gallery="floorplan-gallery" class="col-sm-4">
+            <img src="images/First-Floor.png" class="img-responsive">
+          </a>
+          <a href="images/Second-Floor.png" data-toggle="lightbox" data-gallery="floorplan-gallery" class="col-sm-4">
+            <img src="images/Second-Floor.png" class="img-responsive">
+          </a>
+          <a href="images/Third-Floor.png" data-toggle="lightbox" data-gallery="floorplan-gallery" class="col-sm-4">
+            <img src="images/Third-Floor.png" class="img-responsive">
+          </a>
+        </div>
       </div>
     </div>
   </div>
@@ -223,6 +245,14 @@
   <!-- Placed at the end of the document so the pages load faster -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.bsPhotoGallery.js"></script>
+  <script src="js/ekko-lightbox.js"></script>
+  <script>
+    $(document).on('click', '[data-toggle="lightbox"]', function(event) {
+      event.preventDefault();
+      $(this).ekkoLightbox();
+    });
+  </script>
 
 </body>
 
