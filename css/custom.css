@@ -189,12 +189,19 @@ i {
 
 #price-wrapper {
   height: calc(100vh - 50px);
+  background: url('../images/chaletview.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding-top: 100px;
 }
 
 
 @media (min-width: 768px) {
   #price-wrapper {
     padding-top: 150px;
+
   }
 }
 
@@ -278,16 +285,6 @@ i {
   .icon-box > p {
     font-size: 12px;
   }
-}
-
-#price-wrapper {
-  /*background-image: url('../images/chaletview.jpg');*/
-  /*background-color: #ccc;*/
-  background: url('../images/chaletview.jpg') no-repeat center center fixed;
--webkit-background-size: cover;
--moz-background-size: cover;
--o-background-size: cover;
-background-size: cover;
 }
 
 /* Sticky footer styles
