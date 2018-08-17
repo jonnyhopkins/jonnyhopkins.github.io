@@ -9,13 +9,13 @@
   font-style: normal;
 }
 
-h1, p,{
-  font-family:'futuramedium', sans-serif;
+h1, p, {
+  font-family: 'futuramedium', sans-serif;
 }
 
 h1 {
   font-weight: 500;
-    font-variant: small-caps;
+  font-variant: small-caps;
 }
 
 p {
@@ -23,7 +23,7 @@ p {
   font-weight: 400;
 }
 
-.content-wrapper > ul > li {
+.content-wrapper>ul>li {
   font-size: 12pt;
   font-family: futuramedium, sans-serif;
   font-weight: 500;
@@ -34,7 +34,7 @@ p {
 }
 
 .hr-purple {
-  border-top-color: rgba(57,0,57,1);
+  border-top-color: rgba(57, 0, 57, 1);
 }
 
 @media (max-width: 1024px) {
@@ -85,41 +85,37 @@ i {
   #topnav {
     min-height: 90px;
   }
-
   #topnav a {
     line-height: 80px;
   }
-
   .navbar-brand {
     padding-top: 5px;
     padding-left: 5px;
   }
-
-  .navbar-brand > img {
+  .navbar-brand>img {
     height: 80px;
   }
 }
+
 @media (max-width: 767px) {
   .navbar-inverse .navbar-collapse {
-    background-color: rgba(0,0,0,0.9);
+    background-color: rgba(0, 0, 0, 0.9);
   }
   #topnav {
-    height:auto;
+    height: auto;
     min-height: 50px;
   }
-
   .navbar-brand {
     padding-top: 2px;
     padding-left: 2px;
   }
-
-  .navbar-brand > img {
+  .navbar-brand>img {
     height: 46px;
   }
 }
 
 #topnav, .dropdown-menu {
-  background-color: rgba(0,0,0,0.3);
+  background-color: rgba(0, 0, 0, 0.3);
   border-bottom-style: none;
 }
 
@@ -134,9 +130,9 @@ i {
 }
 
 .dropdown-toggle {
-  max-height:90px;
+  max-height: 90px;
   min-height: 50px;
-  padding-top:5px !important;
+  padding-top: 5px !important;
 }
 
 @media (max-width:767px) {
@@ -154,21 +150,18 @@ i {
   line-height: 50px !important;
 }
 
-.dropdown-menu > li > a:hover, .dropdown > a:hover, .dropdown > a:active, .navbar-right > li > a:hover {
-    background-color: rgba(0,0,0,0.2) !important;
-    background-image: none;
+.dropdown-menu>li>a:hover, .dropdown>a:hover, .dropdown>a:active, .navbar-right>li>a:hover {
+  background-color: rgba(0, 0, 0, 0.2) !important;
+  background-image: none;
 }
 
-.navbar-inverse .navbar-nav>.active> a,
-.navbar-inverse .navbar-nav>.active> a:focus,
-.navbar-inverse .navbar-nav>.active> a:hover
-{
-  background: rgba(0,0,0,0.5);
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
+  background: rgba(0, 0, 0, 0.5);
 }
 
-.menu-selector > ul > li {
-    width: 100px !important;
-    text-align: center;
+.menu-selector>ul>li {
+  width: 100px !important;
+  text-align: center;
 }
 
 .navbar-nav li a {
@@ -195,6 +188,7 @@ i {
 #price-wrapper {
   height: calc(100vh - 50px);
   background: url('../images/chaletview.jpg') no-repeat center center fixed;
+  background-attachment: fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -202,11 +196,25 @@ i {
   padding-top: 100px;
 }
 
-
 @media (min-width: 768px) {
   #price-wrapper {
     padding-top: 150px;
+  }
+}
 
+#booking-wrapper {
+  background: url('../images/chaletview.jpg') no-repeat center center fixed;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding-top: 100px;
+}
+
+@media (max-width: 768px) {
+  #booking-wrapper {
+    padding-top: 60px;
   }
 }
 
@@ -244,11 +252,11 @@ i {
   color: rgba(57, 0, 57, 1);
 }
 
-.white-prices {
+.white-prices, #booking-inner {
   background-color: rgba(225, 225, 225, 0.6);
 }
 
-.white-prices > p {
+.white-prices, #booking-inner>p {
   font-size: 14px;
   text-align: center;
 }
@@ -262,7 +270,6 @@ i {
   text-align: center;
 }
 
-
 .content-wrapper {
   position: relative;
   top: 50%;
@@ -270,25 +277,54 @@ i {
   transform: translateY(-50%);
 }
 
-
-
 .home-img {
   height: inherit;
   -o-object-fit: cover;
   object-fit: cover;
   width: 100%;
-
 }
 
 .icon-box {
   font-size: 20px;
   padding: 0 0px 20px 3px;
-
 }
 
 @media (max-width: 420px) {
-  .icon-box > p {
+  .icon-box>p {
     font-size: 12px;
+  }
+}
+
+/* Cloudbeds iframe stuff */
+
+@media (min-width: 786px) {
+  #booking-inner {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+  }
+}
+
+@media (max-width: 787px) {
+  #booking-inner {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+  }
+}
+
+@media (min-width: 768px) {
+  #cloudbeds {
+    /* min-height: calc(100vh - 50px); */
+    min-height: 1041px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  #cloudbeds {
+    min-height: calc(100vh - 50px);
+    width: 100%;
   }
 }
 
