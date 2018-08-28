@@ -234,7 +234,7 @@ i {
   }
 }
 
-.purple, .white, .white-prices {
+.purple, .white, .white-prices, .terms-and-conditions {
   padding-left: 5%;
   padding-right: 5%;
 }
@@ -264,11 +264,11 @@ i {
   color: rgba(57, 0, 57, 1);
 }
 
-.white-prices, #booking-inner {
+.white-prices, .terms-and-conditions, #booking-inner {
   background-color: rgba(225, 225, 225, 0.6);
 }
 
-.white-prices, #booking-inner>p {
+.white-prices, .terms-and-conditions, #booking-inner>p {
   font-size: 14px;
   text-align: center;
 }
@@ -334,6 +334,17 @@ i {
     /*min-height: calc(100vh - 50px);*/
     width: 100%;
   }
+}
+
+.terms-and-conditions>h1 {
+  font-size: 20pt;
+}
+
+.terms-and-conditions>h4 {
+  font-size: 16pt;
+}
+.terms-and-conditions>p {
+  font-size: 12pt;
 }
 
 /* Sticky footer styles
