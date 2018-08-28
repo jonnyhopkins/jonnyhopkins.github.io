@@ -239,6 +239,18 @@ i {
   padding-right: 5%;
 }
 
+@media (min-width: 1024px) {
+  .prices-text>p {
+    font-size: 11pt;
+  }
+}
+
+@media (max-width: 1023px) {
+  .prices-text>p {
+    font-size: 9pt;
+  }
+}
+
 .purple {
   background-color: rgba(57, 0, 57, 1);
   color: white;
@@ -299,31 +311,27 @@ i {
 
 @media (min-width: 786px) {
   #booking-inner {
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 20px;
+    padding: 20px;
   }
 }
 
 @media (max-width: 787px) {
   #booking-inner {
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 10px;
+    padding: 10px;
   }
 }
 
 @media (min-width: 768px) {
   #cloudbeds {
     /* min-height: calc(100vh - 50px); */
-    min-height: 1041px;
+    /*min-height: 1041px;*/
     width: 100%;
   }
 }
 
 @media (max-width: 767px) {
   #cloudbeds {
-    min-height: calc(100vh - 50px);
+    /*min-height: calc(100vh - 50px);*/
     width: 100%;
   }
 }
