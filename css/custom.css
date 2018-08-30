@@ -160,7 +160,7 @@ i {
 }
 
 .menu-selector>ul>li {
-  width: 100px !important;
+  width: 95px !important;
   text-align: center;
 }
 
@@ -212,7 +212,7 @@ i {
   padding-top: 100px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   #booking-wrapper {
     padding-top: 60px;
   }
@@ -321,19 +321,8 @@ i {
   }
 }
 
-@media (min-width: 768px) {
-  #cloudbeds {
-    /* min-height: calc(100vh - 50px); */
-    /*min-height: 1041px;*/
-    width: 100%;
-  }
-}
-
-@media (max-width: 767px) {
-  #cloudbeds {
-    /*min-height: calc(100vh - 50px);*/
-    width: 100%;
-  }
+#cloudbeds {
+  width: 100%;
 }
 
 .terms-and-conditions>h1 {
@@ -343,6 +332,7 @@ i {
 .terms-and-conditions>h4 {
   font-size: 16pt;
 }
+
 .terms-and-conditions>p {
   font-size: 12pt;
 }
