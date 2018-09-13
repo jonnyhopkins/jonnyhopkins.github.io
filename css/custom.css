@@ -37,7 +37,7 @@ p {
   border-top-color: rgba(57, 0, 57, 1);
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1350px) {
   h1 {
     font-size: 20pt;
   }
@@ -335,6 +335,24 @@ i {
 
 .terms-and-conditions>p {
   font-size: 12pt;
+}
+
+/* create a bar at top of page, otherwise map is under navigation */
+
+@media(min-width: 768px) {
+  #getting-here-top-bar {
+    height:90px;
+  }
+}
+
+@media(max-width: 767px) {
+  #getting-here-top-bar {
+
+  }
+}
+
+#map {
+  min-height: 80vh;
 }
 
 /* Sticky footer styles
