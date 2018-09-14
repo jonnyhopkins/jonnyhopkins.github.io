@@ -16,7 +16,7 @@
   </script>
 
   <title>Chalet l'Aiglon - The Chalet</title>
-  <meta name="description" content="Chalet l'Aiglon is a brand new build in La Rosière, find out more about what's on offer">
+  <meta name="description" content="">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -24,9 +24,9 @@
   <link rel="shortcut icon" type="image/png" href="icons/favicon.png" />
   <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 
-  <link rel="alternate" hreflang="en" href="http://www.chaletaiglon.com/the-chalet.html" />
-  <link rel="alternate" hreflang="fr" href="http://www.chaletaiglon.com/the-chalet-fr.html" />
-  <link rel="alternate" hreflang="x-default" href="http://www.chaletaiglon.com/the-chalet.html"/>
+  <link rel="alternate" hreflang="en" href="http://www.chaletaiglon.com/getting-here.html" />
+  <link rel="alternate" hreflang="fr" href="http://www.chaletaiglon.com/getting-here-fr.html" />
+  <link rel="alternate" hreflang="x-default" href="http://www.chaletaiglon.com/getting-here.html"/>
 </head>
 
 <body>
@@ -41,7 +41,7 @@
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img class="langico" src="icons/United-Kingdom.png" alt="Language English" /> EN <span class="caret"></span></a>
             <ul class="dropdown-menu">
               <li><a href="#"><img class="langico" src="icons/United-Kingdom.png" alt="Language English" /> EN</a></li>
-              <li><a href="the-chalet-fr.html"><img class="langico" src="icons/France.png" alt="Langue Français" /> FR</a></li>
+              <li><a href="getting-here-fr.html"><img class="langico" src="icons/France.png" alt="Langue Français" /> FR</a></li>
             </ul>
           </li>
         </ul>
@@ -56,10 +56,10 @@
       <div class="collapse navbar-collapse menu-selector" id="myNavbar">
         <ul class="nav navbar-nav navbar-right">
           <li><a href="/">Home</a></li>
-          <li class="dropdown active">
+          <li class="dropdown">
             <a href="#" class="drowdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">The Chalet <span class="caret"></span></a>
             <ul class="dropdown-menu">
-              <li class="active"><a href="the-chalet.html">About The Chalet</a></li>
+              <li><a href="the-chalet.html">About The Chalet</a></li>
               <li><a href="prices.html">Prices</a></li>
             </ul>
           </li>
@@ -73,16 +73,19 @@
 
   <div class="container-fluid">
     <div class="row">
+      <div class="col-md-12 purple" id="getting-here-top-bar" style="min-height:0px !important">
+      </div>
+    </div>
+    <div class="row">
       <div class="col-md-4 purple purple-home ">
         <div class="content-wrapper">
-          <h1>About The Chalet</h1>
+          <h1>Finding Us</h1>
           <hr class="hr-white"/>
-          <p>The chalet will be furnished with a modern but cosy feel with large windows, and a cosy log burning fire - traditional wood will complement a modern feel.</p>
-          <p>The open-plan living and dining area is where you can relax, with a cosy sitting area and two large dining tables where you’ll join your fellow guests for breakfast and dinner.</p>
+          <p>Getting here is easy - just use Google Maps.  Don't have it?  Why not?!  Don't come over the Col du Petit St. Bernard in winter, foo'.  It's fine in the summer though.</p>
         </div>
       </div>
       <div class="col-md-8 img-wrapper home-img-wrapper">
-        <img class="home-img img-responsive " src="images/fire.jpg" alt="Fireplace" />
+        <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2790.2570626388715!2d6.849478215562864!3d45.62557197910319!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xff558146ce5c8996!2sChalet+l&#39;Aiglon!5e0!3m2!1sen!2sfr!4v1536671595311" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
       </div>
       <div class="col-md-8 img-wrapper home-img-wrapper hidden-sm hidden-xs">
         <img class="home-img img-responsive" src="images/bed.jpeg" alt="Bed With Breakfast Tray" />
@@ -104,23 +107,6 @@
       </div>
       <div class="col-md-8 img-wrapper home-img-wrapper">
         <img class="home-img home-img-wrapper" src="images/spa.jpeg" alt="The Spa" />
-      </div>
-    </div>
-  </div>
-
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-md-3">
-        <a href="#floorPlan1" data-toggle="modal"><img class="img-responsive home-img" src="images/Ground-Floor.png" alt="Ground Floor"/></a>
-      </div>
-      <div class="col-md-3">
-        <a href="#floorPlan2" data-toggle="modal"><img class="img-responsive home-img" src="images/First-Floor.png" alt="Ground Floor"/></a>
-      </div>
-      <div class="col-md-3">
-        <a href="#floorPlan3" data-toggle="modal"><img class="img-responsive home-img" src="images/Second-Floor.png" alt="Ground Floor"/></a>
-      </div>
-      <div class="col-md-3">
-        <a href="#floorPlan4" data-toggle="modal"><img class="img-responsive home-img" src="images/Third-Floor.png" alt="Ground Floor"/></a>
       </div>
     </div>
   </div>
@@ -175,58 +161,6 @@
           </div>
         </div>
       </form>
-    </div>
-  </div>
-
-  <div class="modal fade" id="floorPlan1" role="dialog">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">x</span><span class="sr-only">Close</span></button>
-        </div>
-        <div class="modal-body">
-          <img src="images/Ground-Floor.png" class="img-responsive">
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="modal fade" id="floorPlan2" role="dialog">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">x</span><span class="sr-only">Close</span></button>
-        </div>
-        <div class="modal-body">
-          <img src="images/First-Floor.png" class="img-responsive">
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="modal fade" id="floorPlan3" role="dialog">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">x</span><span class="sr-only">Close</span></button>
-        </div>
-        <div class="modal-body">
-          <img src="images/Second-Floor.png" class="img-responsive">
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="modal fade" id="floorPlan4" role="dialog">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">x</span><span class="sr-only">Close</span></button>
-        </div>
-        <div class="modal-body">
-          <img src="images/Third-Floor.png" class="img-responsive">
-        </div>
-      </div>
     </div>
   </div>
 
