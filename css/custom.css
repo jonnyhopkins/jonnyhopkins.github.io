@@ -13,8 +13,7 @@ h1, p, {
   font-family: 'futuramedium', sans-serif;
 }
 
-h1 {
-  font-weight: 500;
+h1, h2, h3, h4 {
   font-variant: small-caps;
 }
 
@@ -338,6 +337,10 @@ i {
 }
 
 /* create a bar at top of page, otherwise map is under navigation */
+
+#getting-here-top-bar {
+  min-height: 0px;
+}
 
 @media(min-width: 768px) {
   #getting-here-top-bar {
