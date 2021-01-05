@@ -103,7 +103,11 @@
         </div>
       </div>
       <div class="col-md-9 img-wrapper other-img-wrapper">
-        <img class="home-img img-responsive " src="images/chaletview.jpg" alt="Photo of Us" />
+        <picture class="home-img img-responsive ">
+          <source srcset="images/chaletview-large.webp 2000w, images/chaletview-med.webp 1000w, images/chaletview-small.webp 500w" type="image/webp">
+          <source srcset="images/chaletview-large.jp2" type="image/jp2">
+          <img class="home-img img-responsive " src="images/chaletview.jpg"  alt="Photo of Us" />
+      </picture>
       </div>
     </div>
   </div>
