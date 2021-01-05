@@ -115,7 +115,11 @@
         </div>
       </div>
       <div class="col-md-7 col-lg-8 img-wrapper home-img-wrapper">
-        <img class="home-img img-responsive" src="images/6V7A0512.jpg" srcset="images/6V7A0512-large.webp 2000w, images/6V7A0512-med.webp 1000w, images/6V7A0512-small.webp 500w" alt="Projection of the finished chalet" />
+        <picture class="home-img img-responsive">
+          <source srcset="images/6V7A0512-large.webp 2000w, images/6V7A0512-med.webp 1000w, images/6V7A0512-small.webp 500w">
+          <source srcset="images/6V7A0496-2-large.jp2">
+          <img class="home-img img-responsive" src="images/6V7A0512.jpg"  alt="Projection of the finished chalet" />
+        </picture>
       </div>
     </div>
 
