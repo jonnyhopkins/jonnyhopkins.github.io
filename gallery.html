@@ -22,6 +22,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/custom.css">
+  <link rel="stylesheet" href="css/ekko-lightbox.css">
   <link href="ekko-lightbox.css" rel="stylesheet">
   <link rel="shortcut icon" type="image/png" href="icons/favicon.png" />
   <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
@@ -125,28 +126,33 @@
   <!-- Contact form -->
   <div class="modal fade" id="contact" role="dialog">
     <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h4>Contact</h4>
-          </div>
-          <div class="modal-body">
-              <p>For reservations and enquiries, please contact us using the information below:</p>
-              <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> <a href="mailto:&#099;&#111;&#110;&#116;&#097;&#099;&#116;&#064;&#099;&#104;&#097;&#108;&#101;&#116;&#097;&#105;&#103;&#108;&#111;&#110;&#046;&#099;&#111;&#109;">&#099;&#111;&#110;&#116;&#097;&#099;&#116;&#064;&#099;&#104;&#097;&#108;&#101;&#116;&#097;&#105;&#103;&#108;&#111;&#110;&#046;&#099;&#111;&#109;</a>
-              <br /> <span class="glyphicon glyphicon-earphone" aria-hidden="true"></span> <a href="&#116;&#101;&#108;:+&#051;&#051;&#055;&#053;&#048;&#050;&#055;&#057;&#050;&#050;&#056;">+&#051;&#051;&#032;(&#048;)&#032;&#055;&#032;&#053;&#048;&#032;&#050;&#055;&#032;&#057;&#050;&#032;&#050;&#056;</a>
-          </div>
-          <div class="modal-footer">
-            <a class="btn btn-default" data-dismiss="modal">Close</a>
-          </div>
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4>Contact</h4>
         </div>
-      </form>
+        <div class="modal-body">
+            <p>For reservations and enquiries, please contact us using the information below:</p>
+            <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> <a href="mailto:&#099;&#111;&#110;&#116;&#097;&#099;&#116;&#064;&#099;&#104;&#097;&#108;&#101;&#116;&#097;&#105;&#103;&#108;&#111;&#110;&#046;&#099;&#111;&#109;">&#099;&#111;&#110;&#116;&#097;&#099;&#116;&#064;&#099;&#104;&#097;&#108;&#101;&#116;&#097;&#105;&#103;&#108;&#111;&#110;&#046;&#099;&#111;&#109;</a>
+            <br /> <span class="glyphicon glyphicon-earphone" aria-hidden="true"></span> <a href="&#116;&#101;&#108;:+&#051;&#051;&#055;&#053;&#048;&#050;&#055;&#057;&#050;&#050;&#056;">+&#051;&#051;&#032;(&#048;)&#032;&#055;&#032;&#053;&#048;&#032;&#050;&#055;&#032;&#057;&#050;&#032;&#050;&#056;</a>
+        </div>
+        <div class="modal-footer">
+          <a class="btn btn-default" data-dismiss="modal">Close</a>
+        </div>
+      </div>
     </div>
   </div>
 
   <!-- Bootstrap core JavaScript ================================================== -->
   <!-- Placed at the end of the document so the pages load faster -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <script src="ekko-lightbox.js"></script>
+  <script src="js/ekko-lightbox.js"></script>
   <script src="js/bootstrap.min.js"></script>
+
+  $(document).on('click', '[data-toggle="lightbox"]', function(event) {
+                event.preventDefault();
+                $(this).ekkoLightbox();
+            });
+
 
 </body>
 
