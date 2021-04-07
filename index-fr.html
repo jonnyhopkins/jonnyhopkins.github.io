@@ -16,24 +16,6 @@
     gtag('config', 'UA-110486248-1');
   </script>
 
-  <!-- Facebook Pixel Code -->
-<script>
-  !function(f,b,e,v,n,t,s)
-  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-  n.queue=[];t=b.createElement(e);t.async=!0;
-  t.src=v;s=b.getElementsByTagName(e)[0];
-  s.parentNode.insertBefore(t,s)}(window, document,'script',
-  'https://connect.facebook.net/en_US/fbevents.js');
-  fbq('init', '504517710040020');
-  fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-  src="https://www.facebook.com/tr?id=504517710040020&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Facebook Pixel Code -->
-
   <script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/unique-methods/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script>
   <script type="text/javascript">
     window.dojoRequire(["mojo/signup-forms/Loader"], function(L) {
@@ -97,7 +79,7 @@
             </ul>
           </li>
           <li><a href="book-fr.html">Réserver</a></li>
-<li><a href="la-rosiere-fr.html">La Rosière</a></li>
+          <li><a href="la-rosiere-fr.html">La Rosière</a></li>
           <li><a style="line-height:40px !important;" href="about-us-fr.html">A Propos De Nous</a></li>
           <li><a href="#contact" data-toggle="modal">Contact</a></li>
         </ul>
@@ -115,7 +97,11 @@
         </div>
       </div>
       <div class="col-md-7 col-lg-8 img-wrapper home-img-wrapper">
-        <img class="home-img img-responsive" src="images/6V7A0512.jpg" alt="Projection of the finished chalet" />
+        <picture class="home-img img-responsive">
+          <source srcset="images/6V7A0512-large.webp 1400w, images/6V7A0512-med.webp 966w, images/6V7A0512-small.webp 200w" type="image/webp">
+          <source srcset="images/6V7A0512-large.jp2" type="image/jp2">
+          <img class="home-img img-responsive" src="images/6V7A0512.jpg"  alt="Projection of the finished chalet" />
+        </picture>
       </div>
     </div>
 
@@ -203,7 +189,11 @@
 
     <div class="row">
       <div class="col-md-7 col-lg-8 img-wrapper home-img-wrapper hidden-xs hidden-sm">
-        <img class="home-img img-responsive" src="images/IMG_9965.jpg" alt="Photo de Freja et Jonny" />
+        <picture class="home-img img-responsive">
+          <source srcset="images/IMG_9965-large.webp 2000w, images/IMG_9965-med.webp 1000w, images/IMG_9965-small.webp 500w" type="image/webp">
+          <source srcset="images/IMG_9965-large.jp2" type="image/jp2">
+          <img class="home-img img-responsive" src="images/IMG_9965.jpg"  alt="Photo de Freja et Jonny" />
+        </picture>
       </div>
       <div class="col-md-5 col-lg-4 purple purple-home">
         <div class="content-wrapper">
@@ -214,7 +204,11 @@
         </div>
       </div>
       <div class="col-md-7 col-lg-8 img-wrapper home-img-wrapper visible-xs visible-sm">
-        <img class="home-img img-responsive" src="images/IMG_9965.jpg" alt="Photo de Freja et Jonny" />
+        <picture class="home-img img-responsive">
+          <source srcset="images/IMG_9965-large.webp 2000w, images/IMG_9965-med.webp 1000w, images/IMG_9965-small.webp 500w" type="image/webp">
+          <source srcset="images/IMG_9965-large.jp2" type="image/jp2">
+          <img class="home-img img-responsive" src="images/IMG_9965.jpg"  alt="Photo de Freja et Jonny" />
+      </picture>
       </div>
     </div>
 
@@ -229,13 +223,21 @@
         </div>
       </div>
       <div class="col-md-7 col-lg-8 img-wrapper home-img-wrapper">
-        <img class="home-img img-responsive" src="images/6V7A0520.jpg" alt="Vue depuis La Rosière" />
+        <picture class="home-img img-responsive">
+          <source srcset="images/6V7A0520-large.webp 2000w, images/6V7A0520-med.webp 1000w, images/6V7A0520-small.webp 500w" type="image/webp">
+          <source srcset="images/6V7A0520-large.jp2" type="image/jp2">
+          <img class="home-img img-responsive" src="images/6V7A0520.jpg"  alt="Vue depuis La Rosière" />
+      </picture>
       </div>
     </div>
 
     <div class="row ">
       <div class="col-md-7 col-lg-8 img-wrapper home-img-wrapper hidden-sm hidden-xs">
-        <img class="img-responsive home-img" src="images/6V7A9573web.jpg" alt="Example Bedroom" />
+        <picture class="img-responsive home-img">
+          <source srcset="images/6V7A9573web-large.webp 2000w, images/6V7A9573web-med.webp 1000w, images/6V7A9573web-small.webp 500w" type="image/webp">
+          <source srcset="images/6V7A9573web-large.jp2" type="image/jp2">
+          <img class="img-responsive home-img" src="images/6V7A9573web.jpg"  alt="Example Bedroom" />
+      </picture>
       </div>
       <div class="col-md-5 col-lg-4 purple purple-home ">
         <div class="content-wrapper">
@@ -246,7 +248,11 @@
         </div>
       </div>
       <div class="col-md-7 col-lg-8 img-wrapper home-img-wrapper visible-sm visible-xs">
-        <img class="img-responsive home-img" src="images/6V7A9573web.jpg" alt="Example Bedroom" />
+        <picture class="img-responsive home-img">
+          <source srcset="images/6V7A9573web-large.webp 2000w, images/6V7A9573web-med.webp 1000w, images/6V7A9573web-small.webp 500w" type="image/webp">
+          <source srcset="images/6V7A9573web-large.jp2" type="image/jp2">
+          <img class="img-responsive home-img" src="images/6V7A9573web.jpg"  alt="Example Bedroom" />
+      </picture>
       </div>
 
 
@@ -260,11 +266,19 @@
         </div>
       </div>
       <div class="col-md-7 col-lg-8 img-wrapper home-img-wrapper">
-        <img class="img-responsive home-img" src="images/6V7A9701.jpg" alt="Espace balnéo" />
+        <picture class="img-responsive home-img">
+          <source srcset="images/6V7A9701-large.webp 2000w, images/6V7A9701-med.webp 1000w, images/6V7A9701-small.webp 500w" type="image/webp">
+          <source srcset="images/6V7A9701-large.jp2" type="image/jp2">
+          <img class="img-responsive home-img" src="images/6V7A9701.jpg"  alt="Espace balnéo" />
+      </picture>
       </div>
 
       <div class="col-md-7 col-lg-8 img-wrapper home-img-wrapper hidden-sm hidden-xs">
-        <img class="img-responsive home-img" src="images/6V7A0496-2.jpg" alt="Skieur en Italie">
+        <picture class="img-responsive home-img">
+          <source srcset="images/6V7A0496-2-large.webp 2000w, images/6V7A0496-2-med.webp 1000w, images/6V7A0496-2-small.webp 500w" type="image/webp">
+          <source srcset="images/6V7A0496-2-large.jp2" type="image/jp2">
+          <img class="img-responsive home-img" src="images/6V7A0496-2.jpg"  alt="Skieur en Italie" />
+      </picture>
       </div>
       <div class="col-md-5 col-lg-4 purple purple-home">
         <div class="content-wrapper">
@@ -277,7 +291,11 @@
         </div>
       </div>
       <div class="col-md-7 col-lg-8 img-wrapper home-img-wrapper visible-sm visible-xs">
-        <img class="img-responsive home-img" src="images/6V7A0496-2.jpg" alt="Skieur en Italie">
+        <picture class="img-responsive home-img">
+          <source srcset="images/6V7A0496-2-large.webp 2000w, images/6V7A0496-2-med.webp 1000w, images/6V7A0496-2-small.webp 500w" type="image/webp">
+          <source srcset="images/6V7A0496-2-large.jp2" type="image/jp2">
+          <img class="img-responsive home-img" src="images/6V7A0496-2.jpg"  alt="Skieur en Italie" />
+      </picture>
       </div>
     </div>
   </div>

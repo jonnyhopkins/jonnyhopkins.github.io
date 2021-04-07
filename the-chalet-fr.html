@@ -16,24 +16,6 @@
     gtag('config', 'UA-110486248-1');
   </script>
 
-  <!-- Facebook Pixel Code -->
-<script>
-  !function(f,b,e,v,n,t,s)
-  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-  n.queue=[];t=b.createElement(e);t.async=!0;
-  t.src=v;s=b.getElementsByTagName(e)[0];
-  s.parentNode.insertBefore(t,s)}(window, document,'script',
-  'https://connect.facebook.net/en_US/fbevents.js');
-  fbq('init', '504517710040020');
-  fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-  src="https://www.facebook.com/tr?id=504517710040020&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Facebook Pixel Code -->
-
   <title>Chalet l'Aiglon - Le Chalet</title>
   <meta name="description" content="La première maison d'hôtes de Chalet l'Aiglon">
 
@@ -105,10 +87,21 @@
         </div>
       </div>
       <div class="col-md-7 col-lg-8 img-wrapper home-img-wrapper">
-        <img class="home-img img-responsive " src="images/6V7A9668.jpg" alt="Lounge" />
+        <picture class="home-img img-responsive ">
+          <source srcset="images/6V7A9668-large.webp 2000w, images/6V7A9668-med.webp 1000w, images/6V7A9668-small.webp 500w" type="image/webp">
+          <source srcset="images/6V7A9668-large.jp2" type="image/jp2">
+          <img class="home-img img-responsive " src="images/6V7A9668.jpg"  alt="Lounge" />
+      </picture>
       </div>
+    </div>
+
+    <div class="row">
       <div class="col-md-7 col-lg-8 img-wrapper home-img-wrapper hidden-sm hidden-xs">
-        <img class="home-img img-responsive" src="images/6V7A9624.jpg" alt="Example Bedroom" />
+        <picture class="home-img img-responsive">
+          <source srcset="images/6V7A9624-large.webp 2000w, images/6V7A9624-med.webp 1000w, images/6V7A9624-small.webp 500w" type="image/webp">
+          <source srcset="images/6V7A9624-large.jp2" type="image/jp2">
+          <img class="home-img img-responsive" src="images/6V7A9624.jpg"  alt="Example Bedroom" />
+      </picture>
       </div>
       <div class="col-md-5 col-lg-4 white white-home">
         <div class="content-wrapper">
@@ -122,8 +115,15 @@
         </div>
       </div>
       <div class="col-md-7 col-lg-8 img-wrapper home-img-wrapper visible-xs visible-sm">
-        <img class="home-img img-responsive" src="images/6V7A9624.jpg" alt="Example Bedroom" />
+        <picture class="home-img img-responsive">
+          <source srcset="images/6V7A9624-large.webp 2000w, images/6V7A9624-med.webp 1000w, images/6V7A9624-small.webp 500w" type="image/webp">
+          <source srcset="images/6V7A9624-large.jp2" type="image/jp2">
+          <img class="home-img img-responsive" src="images/6V7A9624.jpg"  alt="Example Bedroom" />
+      </picture>
       </div>
+    </div>
+
+    <div class="row">
       <div class="col-md-5 col-lg-4 purple purple-home">
         <div class="content-wrapper">
           <p>Le SPA est équipé d’un hammam pouvant accueillir 4 personnes ainsi qu’un jacuzzi avec vue panoramique sur la vallée de la Tarentaise. Nous disposons également d’une salle de massages avec possibilité de soins sur demande et selon les disponibilités.
@@ -131,7 +131,11 @@
         </div>
       </div>
       <div class="col-md-7 col-lg-8 img-wrapper home-img-wrapper">
-        <img class="home-img home-img-wrapper" src="images/IMG_0543.jpg" alt="Embroidered Towels and Aqua de Parma Toiletries" />
+        <picture class="home-img home-img-wrapper">
+          <source srcset="images/IMG_0543-large.webp 2000w, images/IMG_0543-med.webp 1000w, images/IMG_0543-small.webp 500w" type="image/webp">
+          <source srcset="images/IMG_0543-large.jp2" type="image/jp2">
+          <img class="home-img home-img-wrapper" src="images/IMG_0543.jpg"  alt="Embroidered Towels and Aqua de Parma Toiletries" />
+      </picture>
       </div>
     </div>
   </div>

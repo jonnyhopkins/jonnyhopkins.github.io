@@ -16,24 +16,6 @@
     gtag('config', 'UA-110486248-1');
   </script>
 
-  <!-- Facebook Pixel Code -->
-<script>
-  !function(f,b,e,v,n,t,s)
-  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-  n.queue=[];t=b.createElement(e);t.async=!0;
-  t.src=v;s=b.getElementsByTagName(e)[0];
-  s.parentNode.insertBefore(t,s)}(window, document,'script',
-  'https://connect.facebook.net/en_US/fbevents.js');
-  fbq('init', '504517710040020');
-  fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-  src="https://www.facebook.com/tr?id=504517710040020&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Facebook Pixel Code -->
-
   <title>Chalet l'Aiglon - About La Rosière</title>
   <meta name="description" content="What La Rosière has to offer, a little history, things to do and getting around.">
 
@@ -104,11 +86,19 @@
         </div>
       </div>
       <div class="col-md-7 col-lg-8 img-wrapper home-img-wrapper">
-        <img class="home-img img-responsive " src="images/6V7A0496-2.jpg" alt="Forest Path At Night" />
+        <picture class="home-img img-responsive ">
+          <source srcset="images/6V7A0496-2-large.webp 2000w, images/6V7A0496-2-med.webp 1000w, images/6V7A0496-2-small.webp 500w" type="image/webp">
+          <source srcset="images/6V7A0496-2-large.jp2" type="image/jp2">
+          <img class="home-img img-responsive " src="images/6V7A0496-2.jpg"  alt="Forest Path At Night" />
+      </picture>
       </div>
 
       <div class="col-md-7 col-lg-8 img-wrapper home-img-wrapper hidden-xs hidden-sm">
-        <img class="home-img img-responsive" src="images/piste-map.jpg" alt="La Rosière Piste Map" />
+        <picture class="home-img img-responsive">
+          <source srcset="images/piste-map-large.webp 2000w, images/piste-map-med.webp 1000w, images/piste-map-small.webp 500w" type="image/webp">
+          <source srcset="images/piste-map-large.jp2" type="image/jp2">
+          <img class="home-img img-responsive" src="images/piste-map.jpg"  alt="La Rosière Piste Map" />
+      </picture>
       </div>
       <div class="col-md-5 col-lg-4 white white-home">
         <div class="content-wrapper">
@@ -119,7 +109,11 @@
         </div>
       </div>
       <div class="col-md-7 col-lg-8 img-wrapper home-img-wrapper visible-xs visible-sm">
-        <img class="home-img img-responsive" src="images/piste-map.jpg" alt="La Rosière Piste Map" />
+        <picture class="home-img img-responsive">
+          <source srcset="images/piste-map-large.webp 2000w, images/piste-map-med.webp 1000w, images/piste-map-small.webp 500w" type="image/webp">
+          <source srcset="images/piste-map-large.jp2" type="image/jp2">
+          <img class="home-img img-responsive" src="images/piste-map.jpg"  alt="La Rosière Piste Map" />
+      </picture>
       </div>
 
       <div class="col-md-5 col-lg-4 purple purple-home">
@@ -138,7 +132,11 @@
         </div>
       </div>
       <div class="col-md-7 col-lg-8 img-wrapper home-img-wrapper">
-        <img class="home-img home-img-wrapper" src="images/IMG_0301.JPG" alt="Skier" />
+        <picture class="home-img home-img-wrapper">
+          <source srcset="images/IMG_0301-large.webp 2000w, images/IMG_0301-med.webp 1000w, images/IMG_0301-small.webp 500w" type="image/webp">
+          <source srcset="images/IMG_0301-large.jp2" type="image/jp2">
+          <img class="home-img home-img-wrapper" src="images/IMG_0301.JPG"  alt="Skier" />
+      </picture>
       </div>
     </div>
   </div>

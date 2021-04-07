@@ -16,24 +16,6 @@
     gtag('config', 'UA-110486248-1');
   </script>
 
-  <!-- Facebook Pixel Code -->
-<script>
-  !function(f,b,e,v,n,t,s)
-  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-  n.queue=[];t=b.createElement(e);t.async=!0;
-  t.src=v;s=b.getElementsByTagName(e)[0];
-  s.parentNode.insertBefore(t,s)}(window, document,'script',
-  'https://connect.facebook.net/en_US/fbevents.js');
-  fbq('init', '504517710040020');
-  fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-  src="https://www.facebook.com/tr?id=504517710040020&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Facebook Pixel Code -->
-
   <title>Chalet l'Aiglon - About Us</title>
   <meta name="description" content="Read about Freja + Jonny's story, hosts of Chalet l'Aiglon">
 
@@ -106,7 +88,11 @@
         </div>
       </div>
       <div class="col-md-5 col-lg-4 img-wrapper other-img-wrapper">
-        <img class="home-img img-responsive " src="images/IMG_9928.jpg" alt="Photo of Us" />
+        <picture class="home-img img-responsive ">
+          <source srcset="images/IMG_9928-large.webp 2000w, images/IMG_9928-med.webp 1000w, images/IMG_9928-small.webp 500w" type="image/webp">
+          <source srcset="images/IMG_9928-large.jp2" type="image/jp2">
+          <img class="home-img img-responsive " src="images/IMG_9928.jpg"  alt="Photo of Us" />
+      </picture>
       </div>
     </div>
   </div>
