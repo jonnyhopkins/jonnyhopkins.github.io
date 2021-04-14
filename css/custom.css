@@ -233,6 +233,10 @@ i {
   .home-img-wrapper {
     height: 80vh;
   }
+
+  .gall-img-wrapper {
+    height: 60vh;
+  }
   .other-img-wrapper {
     height: calc(100vh - 50px);
     padding-top: 50px;
