@@ -1,0 +1,47 @@
+<!--          For webp         -->
+
+<source srcset="images/100/$1-100.webp 100w,
+                images/300/$1-300.webp 300w,
+                images/500/$1-500.webp 500w,
+                images/750/$1-750.webp 750w,
+                images/1000/$1-1000.webp 1000w,
+                images/1500/$1-1500.webp 1500w,
+                images/2000/$1-2000.webp 2000w"
+          sizes="100vw"
+          type="image/webp">
+
+<source srcset="images/(.*)-large.webp (.*), images/(.*)-med.webp (.*), images/(.*)-small.webp (.*)" type="image/webp">
+
+<!--          For jp2         -->
+
+
+<source srcset="images/100/$1-100.jp2 100w,
+                images/300/$1-300.jp2 300w,
+                images/500/$1-500.jp2 500w,
+                images/750/$1-750.jp2 750w,
+                images/1000/$1-1000.jp2 1000w,
+                images/1500/$1-1500.jp2 1500w,
+                images/2000/$1-2000.jp2 2000w"
+        sizes="100vw"
+        type="image/jp2">
+
+<source srcset="images/(.*)-large.jp2" type="image/jp2">
+
+
+
+<!--          For jpg         -->
+
+<source srcset="images/100/$2-100.jpg 100w,
+                images/300/$2-300.jpg 300w,
+                images/500/$2-500.jpg 500w,
+                images/750/$2-750.jpg 750w,
+                images/1000/$2-1000.jpg 1000w,
+                images/1500/$2-1500.jpg 1500w,
+                images/2000/$2-2000.jpg 2000w"
+        sizes="100vw"
+        type="image/jpg">
+<img class="$1"
+     src="images/2000/$2-2000.jpg"
+     alt="$3" >
+
+     <img class="(.*)" src="images/(.*).jpg"  alt="(.*)" />
