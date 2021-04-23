@@ -198,7 +198,7 @@ i {
 
 #price-wrapper {
   height: calc(100vh - 50px);
-  background: url('../images/chaletview.jpg') no-repeat center center fixed;
+  background: url('../images/2000/chaletview-2000.jpg') no-repeat center center fixed;
   background-attachment: fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -214,7 +214,7 @@ i {
 }
 
 #booking-wrapper {
-  background: url('../images/chaletview.jpg') no-repeat center center fixed;
+  background: url('../images/2000/chaletview-2000.jpg') no-repeat center center fixed;
   background-attachment: fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
