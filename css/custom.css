@@ -198,7 +198,7 @@ i {
 
 #price-wrapper {
   height: calc(100vh - 50px);
-  background: url('../images/chaletview.jpg') no-repeat center center fixed;
+  background: url('../images/2000/chaletview-2000.jpg') no-repeat center center fixed;
   background-attachment: fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -214,7 +214,7 @@ i {
 }
 
 #booking-wrapper {
-  background: url('../images/chaletview.jpg') no-repeat center center fixed;
+  background: url('../images/2000/chaletview-2000.jpg') no-repeat center center fixed;
   background-attachment: fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -232,6 +232,10 @@ i {
 @media (min-width: 992px) {
   .home-img-wrapper {
     height: 80vh;
+  }
+
+  .gall-img-wrapper {
+    height: 60vh;
   }
   .other-img-wrapper {
     height: calc(100vh - 50px);
@@ -398,7 +402,7 @@ body {
 }
 
 #footleft {
-  margin-top: 15px;
+  margin-top: 5px;
   padding-left: 10px;
 }
 

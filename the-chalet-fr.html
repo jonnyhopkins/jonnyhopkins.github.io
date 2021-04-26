@@ -16,24 +16,6 @@
     gtag('config', 'UA-110486248-1');
   </script>
 
-  <!-- Facebook Pixel Code -->
-<script>
-  !function(f,b,e,v,n,t,s)
-  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-  n.queue=[];t=b.createElement(e);t.async=!0;
-  t.src=v;s=b.getElementsByTagName(e)[0];
-  s.parentNode.insertBefore(t,s)}(window, document,'script',
-  'https://connect.facebook.net/en_US/fbevents.js');
-  fbq('init', '504517710040020');
-  fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-  src="https://www.facebook.com/tr?id=504517710040020&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Facebook Pixel Code -->
-
   <title>Chalet l'Aiglon - Le Chalet</title>
   <meta name="description" content="La première maison d'hôtes de Chalet l'Aiglon">
 
@@ -79,12 +61,13 @@
             <a href="#" class="drowdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Le Chalet <span class="caret"></span></a>
             <ul class="dropdown-menu">
               <li class="active"><a href="the-chalet-fr.html">Le Chalet</a></li>
+              <li><a href="gallery-fr.html">Galerie</a></li>
               <li><a href="getting-here-fr.html">Nous Trouver</a></li>
 
             </ul>
           </li>
           <li><a href="book-fr.html">Réserver</a></li>
-<li><a href="la-rosiere-fr.html">La Rosière</a></li>
+          <li><a href="la-rosiere-fr.html">La Rosière</a></li>
           <li><a style="line-height:40px !important;" href="about-us-fr.html">A Propos De Nous</a></li>
           <li><a href="#contact" data-toggle="modal">Contact</a></li>
         </ul>
@@ -105,63 +88,750 @@
         </div>
       </div>
       <div class="col-md-7 col-lg-8 img-wrapper home-img-wrapper">
-        <img class="home-img img-responsive " src="images/6V7A9668.jpg" alt="Lounge" />
+        <picture class="home-img img-responsive ">
+					<source srcset="images/100/6V7A9668-100.webp 100w,
+					                images/300/6V7A9668-300.webp 300w,
+					                images/500/6V7A9668-500.webp 500w,
+					                images/750/6V7A9668-750.webp 750w,
+					                images/1000/6V7A9668-1000.webp 1000w,
+					                images/1500/6V7A9668-1500.webp 1500w,
+					                images/2000/6V7A9668-2000.webp 2000w"
+					        sizes="100vw"
+					        type="image/webp">
+					<source srcset="images/100/6V7A9668-100.jp2 100w,
+					                images/300/6V7A9668-300.jp2 300w,
+					                images/500/6V7A9668-500.jp2 500w,
+					                images/750/6V7A9668-750.jp2 750w,
+					                images/1000/6V7A9668-1000.jp2 1000w,
+					                images/1500/6V7A9668-1500.jp2 1500w,
+					                images/2000/6V7A9668-2000.jp2 2000w"
+					        sizes="100vw"
+					        type="image/jp2">
+					<source srcset="images/100/6V7A9668-100.jpg 100w,
+					                images/300/6V7A9668-300.jpg 300w,
+					                images/500/6V7A9668-500.jpg 500w,
+					                images/750/6V7A9668-750.jpg 750w,
+					                images/1000/6V7A9668-1000.jpg 1000w,
+					                images/1500/6V7A9668-1500.jpg 1500w,
+					                images/2000/6V7A9668-2000.jpg 2000w"
+					        sizes="100vw"
+					        type="image/jpg">
+					<img class="home-img img-responsive "
+					    src="images/2000/6V7A9668-2000.jpg"
+					    alt="Lounge" >
+      </picture>
       </div>
-      <div class="col-md-7 col-lg-8 img-wrapper home-img-wrapper hidden-sm hidden-xs">
-        <img class="home-img img-responsive" src="images/6V7A9624.jpg" alt="Example Bedroom" />
-      </div>
-      <div class="col-md-5 col-lg-4 white white-home">
-        <div class="content-wrapper">
-          <p>Le chalet est composé de trois types de chambres, toutes exposées Sud/Sud-Est:</p>
-          <ul>
-            <li>Deux chambres “standards” 2 personnes, avec salle de bain attenante.</li>
-            <li>Deux chambres “XL” 2 personnes, avec salle de bain attenante.</li>
-            <li>Une chambre “familiale” 4 personnes: 1 chambre double, 1 chambre avec lits jumeaux et 1 salle de bain attenante.</li>
-          </ul>
-          <p><em><small>Pour une idée plus précise sur l’aménagement du chalet, vous pouvez consulter nos plans d’étages ci-dessous.</small></em></p>
-        </div>
-      </div>
-      <div class="col-md-7 col-lg-8 img-wrapper home-img-wrapper visible-xs visible-sm">
-        <img class="home-img img-responsive" src="images/6V7A9624.jpg" alt="Example Bedroom" />
-      </div>
+    </div>
+
+    <!-- Comfort Rooms Row -->
+        <div class="row">
+          <div class="col-md-7 col-lg-8 hidden-sm hidden-xs">
+            <div id="comfort-carousel-top" class="row carousel slide" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li data-target="#comfort-carousel-top" data-slide-to="0" class="active"></li>
+                <li data-target="#comfort-carousel-top" data-slide-to="1"></li>
+                <li data-target="#comfort-carousel-top" data-slide-to="2"></li>
+              </ol>
+              <div class="carousel-inner" role="listbox">
+                <!-- 1st slide -->
+                <div class="item active img-wrapper home-img-wrapper">
+                  <picture class="home-img img-responsive">
+                    <source srcset="images/100/6V7A9573-100.webp 100w,
+                                images/300/6V7A9573-300.webp 300w,
+                                images/500/6V7A9573-500.webp 500w,
+                                images/750/6V7A9573-750.webp 750w,
+                                images/1000/6V7A9573-1000.webp 1000w,
+                                images/1500/6V7A9573-1500.webp 1500w,
+                                images/2000/6V7A9573-2000.webp 2000w"
+                        sizes="100vw"
+                        type="image/webp">
+                      <source srcset="images/100/6V7A9573-100.jp2 100w,
+                                images/300/6V7A9573-300.jp2 300w,
+                                images/500/6V7A9573-500.jp2 500w,
+                                images/750/6V7A9573-750.jp2 750w,
+                                images/1000/6V7A9573-1000.jp2 1000w,
+                                images/1500/6V7A9573-1500.jp2 1500w,
+                                images/2000/6V7A9573-2000.jp2 2000w"
+                        sizes="100vw"
+                        type="image/jp2">
+                      <source srcset="images/100/6V7A9573-100.jpg 100w,
+                                images/300/6V7A9573-300.jpg 300w,
+                                images/500/6V7A9573-500.jpg 500w,
+                                images/750/6V7A9573-750.jpg 750w,
+                                images/1000/6V7A9573-1000.jpg 1000w,
+                                images/1500/6V7A9573-1500.jpg 1500w,
+                                images/2000/6V7A9573-2000.jpg 2000w"
+                        sizes="100vw"
+                        type="image/jpg">
+                      <img class="home-img img-responsive"
+                           src="images/2000/6V7A9573-2000.jpg"
+                           alt="Example Bedroom" >
+                  </picture>
+                </div>
+                <!-- 2nd slide -->
+                <div class="item img-wrapper home-img-wrapper">
+                  <picture class="home-img img-responsive">
+                    <source srcset="images/100/6V7A9685-100.webp 100w,
+                                images/300/6V7A9685-300.webp 300w,
+                                images/500/6V7A9685-500.webp 500w,
+                                images/750/6V7A9685-750.webp 750w,
+                                images/1000/6V7A9685-1000.webp 1000w,
+                                images/1500/6V7A9685-1500.webp 1500w,
+                                images/2000/6V7A9685-2000.webp 2000w"
+                        sizes="100vw"
+                        type="image/webp">
+                      <source srcset="images/100/6V7A9685-100.jp2 100w,
+                                images/300/6V7A9685-300.jp2 300w,
+                                images/500/6V7A9685-500.jp2 500w,
+                                images/750/6V7A9685-750.jp2 750w,
+                                images/1000/6V7A9685-1000.jp2 1000w,
+                                images/1500/6V7A9685-1500.jp2 1500w,
+                                images/2000/6V7A9685-2000.jp2 2000w"
+                        sizes="100vw"
+                        type="image/jp2">
+                      <source srcset="images/100/6V7A9685-100.jpg 100w,
+                                images/300/6V7A9685-300.jpg 300w,
+                                images/500/6V7A9685-500.jpg 500w,
+                                images/750/6V7A9685-750.jpg 750w,
+                                images/1000/6V7A9685-1000.jpg 1000w,
+                                images/1500/6V7A9685-1500.jpg 1500w,
+                                images/2000/6V7A9685-2000.jpg 2000w"
+                        sizes="100vw"
+                        type="image/jpg">
+                      <img class="home-img img-responsive"
+                           src="images/2000/6V7A9685-2000.jpg"
+                           alt="Example Bedroom" >
+                    </picture>
+                  </div>
+                <!-- 3rd slide -->
+                <div class="item img-wrapper home-img-wrapper">
+                  <picture class="home-img img-responsive">
+                    <source srcset="images/100/6V7A0529-100.webp 100w,
+                                images/300/6V7A0529-300.webp 300w,
+                                images/500/6V7A0529-500.webp 500w,
+                                images/750/6V7A0529-750.webp 750w,
+                                images/1000/6V7A0529-1000.webp 1000w,
+                                images/1500/6V7A0529-1500.webp 1500w,
+                                images/2000/6V7A0529-2000.webp 2000w"
+                        sizes="100vw"
+                        type="image/webp">
+                      <source srcset="images/100/6V7A0529-100.jp2 100w,
+                                images/300/6V7A0529-300.jp2 300w,
+                                images/500/6V7A0529-500.jp2 500w,
+                                images/750/6V7A0529-750.jp2 750w,
+                                images/1000/6V7A0529-1000.jp2 1000w,
+                                images/1500/6V7A0529-1500.jp2 1500w,
+                                images/2000/6V7A0529-2000.jp2 2000w"
+                        sizes="100vw"
+                        type="image/jp2">
+                      <source srcset="images/100/6V7A0529-100.jpg 100w,
+                                images/300/6V7A0529-300.jpg 300w,
+                                images/500/6V7A0529-500.jpg 500w,
+                                images/750/6V7A0529-750.jpg 750w,
+                                images/1000/6V7A0529-1000.jpg 1000w,
+                                images/1500/6V7A0529-1500.jpg 1500w,
+                                images/2000/6V7A0529-2000.jpg 2000w"
+                        sizes="100vw"
+                        type="image/jpg">
+                      <img class="home-img img-responsive"
+                           src="images/2000/6V7A0529-2000.jpg"
+                           alt="Example Bedroom" >
+                    </picture>
+                  </div>
+              </div>
+              <!-- Carousel Controls -->
+              <a class="left carousel-control" href="#comfort-carousel-top" role="button" data-slide="prev" style="background:none">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true" style="color:black"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="right carousel-control" href="#comfort-carousel-top" role="button" data-slide="next" style="background:none">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true" style="color:black"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-5 col-lg-4 white white-home">
+            <div class="content-wrapper">
+              <h3>Chambres Conforts</h3>
+                <p>Nos chambres conforts - les plus spacieux du chalet - se trouvent au dernier étage. Elles ont tous les deux une salle de douche attenante ainsi qu’un balcon avec une jolie vue. Lit double ou lits jumelles sont possibles dans ces chambres.</p>
+              </div>
+            </div>
+            <div class="col-md-7 col-lg-8 img-wrapper home-img-wrapper visible-sm visible-xs">
+                <div id="comfort-carousel-bottom" class="row carousel slide" data-ride="carousel">
+                  <ol class="carousel-indicators">
+                    <li data-target="#comfort-carousel-bottom" data-slide-to="0" class="active"></li>
+                    <li data-target="#comfort-carousel-bottom" data-slide-to="1"></li>
+                    <li data-target="#comfort-carousel-bottom" data-slide-to="2"></li>
+                  </ol>
+                  <div class="carousel-inner" role="listbox">
+                    <!-- 1st slide -->
+                    <div class="item active img-wrapper home-img-wrapper">
+                      <picture class="home-img img-responsive">
+                        <source srcset="images/100/6V7A9573-100.webp 100w,
+                                    images/300/6V7A9573-300.webp 300w,
+                                    images/500/6V7A9573-500.webp 500w,
+                                    images/750/6V7A9573-750.webp 750w,
+                                    images/1000/6V7A9573-1000.webp 1000w,
+                                    images/1500/6V7A9573-1500.webp 1500w,
+                                    images/2000/6V7A9573-2000.webp 2000w"
+                            sizes="100vw"
+                            type="image/webp">
+                          <source srcset="images/100/6V7A9573-100.jp2 100w,
+                                    images/300/6V7A9573-300.jp2 300w,
+                                    images/500/6V7A9573-500.jp2 500w,
+                                    images/750/6V7A9573-750.jp2 750w,
+                                    images/1000/6V7A9573-1000.jp2 1000w,
+                                    images/1500/6V7A9573-1500.jp2 1500w,
+                                    images/2000/6V7A9573-2000.jp2 2000w"
+                            sizes="100vw"
+                            type="image/jp2">
+                          <source srcset="images/100/6V7A9573-100.jpg 100w,
+                                    images/300/6V7A9573-300.jpg 300w,
+                                    images/500/6V7A9573-500.jpg 500w,
+                                    images/750/6V7A9573-750.jpg 750w,
+                                    images/1000/6V7A9573-1000.jpg 1000w,
+                                    images/1500/6V7A9573-1500.jpg 1500w,
+                                    images/2000/6V7A9573-2000.jpg 2000w"
+                            sizes="100vw"
+                            type="image/jpg">
+                          <img class="home-img img-responsive"
+                               src="images/2000/6V7A9573-2000.jpg"
+                               alt="Example Bedroom" >
+                      </picture>
+                    </div>
+                    <!-- 2nd slide -->
+                    <div class="item img-wrapper home-img-wrapper">
+                      <picture class="home-img img-responsive">
+                        <source srcset="images/100/6V7A9685-100.webp 100w,
+                                    images/300/6V7A9685-300.webp 300w,
+                                    images/500/6V7A9685-500.webp 500w,
+                                    images/750/6V7A9685-750.webp 750w,
+                                    images/1000/6V7A9685-1000.webp 1000w,
+                                    images/1500/6V7A9685-1500.webp 1500w,
+                                    images/2000/6V7A9685-2000.webp 2000w"
+                            sizes="100vw"
+                            type="image/webp">
+                          <source srcset="images/100/6V7A9685-100.jp2 100w,
+                                    images/300/6V7A9685-300.jp2 300w,
+                                    images/500/6V7A9685-500.jp2 500w,
+                                    images/750/6V7A9685-750.jp2 750w,
+                                    images/1000/6V7A9685-1000.jp2 1000w,
+                                    images/1500/6V7A9685-1500.jp2 1500w,
+                                    images/2000/6V7A9685-2000.jp2 2000w"
+                            sizes="100vw"
+                            type="image/jp2">
+                          <source srcset="images/100/6V7A9685-100.jpg 100w,
+                                    images/300/6V7A9685-300.jpg 300w,
+                                    images/500/6V7A9685-500.jpg 500w,
+                                    images/750/6V7A9685-750.jpg 750w,
+                                    images/1000/6V7A9685-1000.jpg 1000w,
+                                    images/1500/6V7A9685-1500.jpg 1500w,
+                                    images/2000/6V7A9685-2000.jpg 2000w"
+                            sizes="100vw"
+                            type="image/jpg">
+                          <img class="home-img img-responsive"
+                               src="images/2000/6V7A9685-2000.jpg"
+                               alt="Example Bedroom" >
+                        </picture>
+                      </div>
+                    <!-- 3rd slide -->
+                    <div class="item img-wrapper home-img-wrapper">
+                      <picture class="home-img img-responsive">
+                        <source srcset="images/100/6V7A0529-100.webp 100w,
+                                    images/300/6V7A0529-300.webp 300w,
+                                    images/500/6V7A0529-500.webp 500w,
+                                    images/750/6V7A0529-750.webp 750w,
+                                    images/1000/6V7A0529-1000.webp 1000w,
+                                    images/1500/6V7A0529-1500.webp 1500w,
+                                    images/2000/6V7A0529-2000.webp 2000w"
+                            sizes="100vw"
+                            type="image/webp">
+                          <source srcset="images/100/6V7A0529-100.jp2 100w,
+                                    images/300/6V7A0529-300.jp2 300w,
+                                    images/500/6V7A0529-500.jp2 500w,
+                                    images/750/6V7A0529-750.jp2 750w,
+                                    images/1000/6V7A0529-1000.jp2 1000w,
+                                    images/1500/6V7A0529-1500.jp2 1500w,
+                                    images/2000/6V7A0529-2000.jp2 2000w"
+                            sizes="100vw"
+                            type="image/jp2">
+                          <source srcset="images/100/6V7A0529-100.jpg 100w,
+                                    images/300/6V7A0529-300.jpg 300w,
+                                    images/500/6V7A0529-500.jpg 500w,
+                                    images/750/6V7A0529-750.jpg 750w,
+                                    images/1000/6V7A0529-1000.jpg 1000w,
+                                    images/1500/6V7A0529-1500.jpg 1500w,
+                                    images/2000/6V7A0529-2000.jpg 2000w"
+                            sizes="100vw"
+                            type="image/jpg">
+                          <img class="home-img img-responsive"
+                               src="images/2000/6V7A0529-2000.jpg"
+                               alt="Example Bedroom" >
+                        </picture>
+                      </div>
+                  </div>
+                  <!-- Carousel Controls -->
+                  <a class="left carousel-control" href="#comfort-carousel-bottom" role="button" data-slide="prev" style="background:none">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true" style="color:black"></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="right carousel-control" href="#comfort-carousel-bottom" role="button" data-slide="next" style="background:none">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true" style="color:black"></span>
+                    <span class="sr-only">Next</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Standard Rooms Row -->
+            <div class="row">
+              <div class="col-md-5 col-lg-4 purple purple-home">
+                <div class="content-wrapper">
+                  <h3>Chambres Standards</h3>
+                    <p>Au premier étage nous trouvons nos deux chambres standards avec leur salles de douche attenantes. Face au sud avec une vue magnifique sur la vallée de la tarentaise depuis leur balcon partagé, ces deux chambres peuvent être configurés en lit double ou en lits jumelles</p>
+                </div>
+              </div>
+              <div class="col-md-7 col-lg-8 ">
+                <div id="standard-carousel" class="row carousel slide" data-ride="carousel">
+                  <ol class="carousel-indicators">
+                    <li data-target="#standard-carousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#standard-carousel" data-slide-to="1"></li>
+                    <li data-target="#standard-carousel" data-slide-to="2"></li>
+                  </ol>
+                  <div class="carousel-inner" role="listbox">
+                    <!-- 1st slide -->
+                    <div class="item active img-wrapper home-img-wrapper">
+                      <picture class="home-img img-responsive">
+                        <source srcset="images/100/6V7A9702-100.webp 100w,
+                                    images/300/6V7A9702-300.webp 300w,
+                                    images/500/6V7A9702-500.webp 500w,
+                                    images/750/6V7A9702-750.webp 750w,
+                                    images/1000/6V7A9702-1000.webp 1000w,
+                                    images/1500/6V7A9702-1500.webp 1500w,
+                                    images/2000/6V7A9702-2000.webp 2000w"
+                            sizes="100vw"
+                            type="image/webp">
+                          <source srcset="images/100/6V7A9702-100.jp2 100w,
+                                    images/300/6V7A9702-300.jp2 300w,
+                                    images/500/6V7A9702-500.jp2 500w,
+                                    images/750/6V7A9702-750.jp2 750w,
+                                    images/1000/6V7A9702-1000.jp2 1000w,
+                                    images/1500/6V7A9702-1500.jp2 1500w,
+                                    images/2000/6V7A9702-2000.jp2 2000w"
+                            sizes="100vw"
+                            type="image/jp2">
+                          <source srcset="images/100/6V7A9702-100.jpg 100w,
+                                    images/300/6V7A9702-300.jpg 300w,
+                                    images/500/6V7A9702-500.jpg 500w,
+                                    images/750/6V7A9702-750.jpg 750w,
+                                    images/1000/6V7A9702-1000.jpg 1000w,
+                                    images/1500/6V7A9702-1500.jpg 1500w,
+                                    images/2000/6V7A9702-2000.jpg 2000w"
+                            sizes="100vw"
+                            type="image/jpg">
+                          <img class="home-img img-responsive"
+                               src="images/2000/6V7A9702-2000.jpg"
+                               alt="Example Bedroom" >
+                      </picture>
+                    </div>
+                    <!-- 2nd slide -->
+                    <div class="item img-wrapper home-img-wrapper">
+                      <picture class="home-img img-responsive">
+                        <source srcset="images/100/6V7A9720-100.webp 100w,
+                                    images/300/6V7A9720-300.webp 300w,
+                                    images/500/6V7A9720-500.webp 500w,
+                                    images/750/6V7A9720-750.webp 750w,
+                                    images/1000/6V7A9720-1000.webp 1000w,
+                                    images/1500/6V7A9720-1500.webp 1500w,
+                                    images/2000/6V7A9720-2000.webp 2000w"
+                            sizes="100vw"
+                            type="image/webp">
+                          <source srcset="images/100/6V7A9720-100.jp2 100w,
+                                    images/300/6V7A9720-300.jp2 300w,
+                                    images/500/6V7A9720-500.jp2 500w,
+                                    images/750/6V7A9720-750.jp2 750w,
+                                    images/1000/6V7A9720-1000.jp2 1000w,
+                                    images/1500/6V7A9720-1500.jp2 1500w,
+                                    images/2000/6V7A9720-2000.jp2 2000w"
+                            sizes="100vw"
+                            type="image/jp2">
+                          <source srcset="images/100/6V7A9720-100.jpg 100w,
+                                    images/300/6V7A9720-300.jpg 300w,
+                                    images/500/6V7A9720-500.jpg 500w,
+                                    images/750/6V7A9720-750.jpg 750w,
+                                    images/1000/6V7A9720-1000.jpg 1000w,
+                                    images/1500/6V7A9720-1500.jpg 1500w,
+                                    images/2000/6V7A9720-2000.jpg 2000w"
+                            sizes="100vw"
+                            type="image/jpg">
+                          <img class="home-img img-responsive"
+                               src="images/2000/6V7A9720-2000.jpg"
+                               alt="Example Bedroom" >
+                        </picture>
+                      </div>
+                    <!-- 3rd slide -->
+                    <div class="item img-wrapper home-img-wrapper">
+                      <picture class="home-img img-responsive">
+                        <source srcset="images/100/6V7A9712-100.webp 100w,
+                                    images/300/6V7A9712-300.webp 300w,
+                                    images/500/6V7A9712-500.webp 500w,
+                                    images/750/6V7A9712-750.webp 750w,
+                                    images/1000/6V7A9712-1000.webp 1000w,
+                                    images/1500/6V7A9712-1500.webp 1500w,
+                                    images/2000/6V7A9712-2000.webp 2000w"
+                            sizes="100vw"
+                            type="image/webp">
+                          <source srcset="images/100/6V7A9712-100.jp2 100w,
+                                    images/300/6V7A9712-300.jp2 300w,
+                                    images/500/6V7A9712-500.jp2 500w,
+                                    images/750/6V7A9712-750.jp2 750w,
+                                    images/1000/6V7A9712-1000.jp2 1000w,
+                                    images/1500/6V7A9712-1500.jp2 1500w,
+                                    images/2000/6V7A9712-2000.jp2 2000w"
+                            sizes="100vw"
+                            type="image/jp2">
+                          <source srcset="images/100/6V7A9712-100.jpg 100w,
+                                    images/300/6V7A9712-300.jpg 300w,
+                                    images/500/6V7A9712-500.jpg 500w,
+                                    images/750/6V7A9712-750.jpg 750w,
+                                    images/1000/6V7A9712-1000.jpg 1000w,
+                                    images/1500/6V7A9712-1500.jpg 1500w,
+                                    images/2000/6V7A9712-2000.jpg 2000w"
+                            sizes="100vw"
+                            type="image/jpg">
+                          <img class="home-img img-responsive"
+                               src="images/2000/6V7A9712-2000.jpg"
+                               alt="Example Bedroom" >
+                        </picture>
+                      </div>
+                  </div>
+                  <!-- Carousel Controls -->
+                  <a class="left carousel-control" href="#standard-carousel" role="button" data-slide="prev" style="background:none">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true" style="color:black"></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="right carousel-control" href="#standard-carousel" role="button" data-slide="next" style="background:none">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true" style="color:black"></span>
+                    <span class="sr-only">Next</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Family Room Row -->
+            <div class="row">
+              <div class="col-md-7 col-lg-8 hidden-sm hidden-xs">
+                <div id="family-carousel" class="row carousel slide" data-ride="carousel">
+                  <ol class="carousel-indicators">
+                    <li data-target="#family-carousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#family-carousel" data-slide-to="1"></li>
+                    <li data-target="#family-carousel" data-slide-to="2"></li>
+                  </ol>
+                  <div class="carousel-inner" role="listbox">
+                    <!-- 1st slide -->
+                    <div class="item active img-wrapper home-img-wrapper">
+                      <picture class="home-img img-responsive">
+                        <source srcset="images/100/6V7A9624-100.webp 100w,
+                                    images/300/6V7A9624-300.webp 300w,
+                                    images/500/6V7A9624-500.webp 500w,
+                                    images/750/6V7A9624-750.webp 750w,
+                                    images/1000/6V7A9624-1000.webp 1000w,
+                                    images/1500/6V7A9624-1500.webp 1500w,
+                                    images/2000/6V7A9624-2000.webp 2000w"
+                            sizes="100vw"
+                            type="image/webp">
+                          <source srcset="images/100/6V7A9624-100.jp2 100w,
+                                    images/300/6V7A9624-300.jp2 300w,
+                                    images/500/6V7A9624-500.jp2 500w,
+                                    images/750/6V7A9624-750.jp2 750w,
+                                    images/1000/6V7A9624-1000.jp2 1000w,
+                                    images/1500/6V7A9624-1500.jp2 1500w,
+                                    images/2000/6V7A9624-2000.jp2 2000w"
+                            sizes="100vw"
+                            type="image/jp2">
+                          <source srcset="images/100/6V7A9624-100.jpg 100w,
+                                    images/300/6V7A9624-300.jpg 300w,
+                                    images/500/6V7A9624-500.jpg 500w,
+                                    images/750/6V7A9624-750.jpg 750w,
+                                    images/1000/6V7A9624-1000.jpg 1000w,
+                                    images/1500/6V7A9624-1500.jpg 1500w,
+                                    images/2000/6V7A9624-2000.jpg 2000w"
+                            sizes="100vw"
+                            type="image/jpg">
+                          <img class="home-img img-responsive"
+                               src="images/2000/6V7A9624-2000.jpg"
+                               alt="Example Bedroom" >
+                      </picture>
+                    </div>
+                    <!-- 2nd slide -->
+                    <div class="item img-wrapper home-img-wrapper">
+                      <picture class="home-img img-responsive">
+                        <source srcset="images/100/6V7A9631-100.webp 100w,
+                                    images/300/6V7A9631-300.webp 300w,
+                                    images/500/6V7A9631-500.webp 500w,
+                                    images/750/6V7A9631-750.webp 750w,
+                                    images/1000/6V7A9631-1000.webp 1000w,
+                                    images/1500/6V7A9631-1500.webp 1500w,
+                                    images/2000/6V7A9631-2000.webp 2000w"
+                            sizes="100vw"
+                            type="image/webp">
+                          <source srcset="images/100/6V7A9631-100.jp2 100w,
+                                    images/300/6V7A9631-300.jp2 300w,
+                                    images/500/6V7A9631-500.jp2 500w,
+                                    images/750/6V7A9631-750.jp2 750w,
+                                    images/1000/6V7A9631-1000.jp2 1000w,
+                                    images/1500/6V7A9631-1500.jp2 1500w,
+                                    images/2000/6V7A9631-2000.jp2 2000w"
+                            sizes="100vw"
+                            type="image/jp2">
+                          <source srcset="images/100/6V7A9631-100.jpg 100w,
+                                    images/300/6V7A9631-300.jpg 300w,
+                                    images/500/6V7A9631-500.jpg 500w,
+                                    images/750/6V7A9631-750.jpg 750w,
+                                    images/1000/6V7A9631-1000.jpg 1000w,
+                                    images/1500/6V7A9631-1500.jpg 1500w,
+                                    images/2000/6V7A9631-2000.jpg 2000w"
+                            sizes="100vw"
+                            type="image/jpg">
+                          <img class="home-img img-responsive"
+                               src="images/2000/6V7A9631-2000.jpg"
+                               alt="Example Bedroom" >
+                        </picture>
+                      </div>
+                    <!-- 3rd slide -->
+                    <div class="item img-wrapper home-img-wrapper">
+                      <picture class="home-img img-responsive">
+                        <source srcset="images/100/6V7A9638-100.webp 100w,
+                                    images/300/6V7A9638-300.webp 300w,
+                                    images/500/6V7A9638-500.webp 500w,
+                                    images/750/6V7A9638-750.webp 750w,
+                                    images/1000/6V7A9638-1000.webp 1000w,
+                                    images/1500/6V7A9638-1500.webp 1500w,
+                                    images/2000/6V7A9638-2000.webp 2000w"
+                            sizes="100vw"
+                            type="image/webp">
+                          <source srcset="images/100/6V7A9638-100.jp2 100w,
+                                    images/300/6V7A9638-300.jp2 300w,
+                                    images/500/6V7A9638-500.jp2 500w,
+                                    images/750/6V7A9638-750.jp2 750w,
+                                    images/1000/6V7A9638-1000.jp2 1000w,
+                                    images/1500/6V7A9638-1500.jp2 1500w,
+                                    images/2000/6V7A9638-2000.jp2 2000w"
+                            sizes="100vw"
+                            type="image/jp2">
+                          <source srcset="images/100/6V7A9638-100.jpg 100w,
+                                    images/300/6V7A9638-300.jpg 300w,
+                                    images/500/6V7A9638-500.jpg 500w,
+                                    images/750/6V7A9638-750.jpg 750w,
+                                    images/1000/6V7A9638-1000.jpg 1000w,
+                                    images/1500/6V7A9638-1500.jpg 1500w,
+                                    images/2000/6V7A9638-2000.jpg 2000w"
+                            sizes="100vw"
+                            type="image/jpg">
+                          <img class="home-img img-responsive"
+                               src="images/2000/6V7A9638-2000.jpg"
+                               alt="Example Bedroom" >
+                        </picture>
+                      </div>
+                  </div>
+                  <!-- Carousel Controls -->
+                  <a class="left carousel-control" href="#family-carousel" role="button" data-slide="prev" style="background:none">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true" style="color:black"></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="right carousel-control" href="#family-carousel" role="button" data-slide="next" style="background:none">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true" style="color:black"></span>
+                    <span class="sr-only">Next</span>
+                  </a>
+                </div>
+              </div>
+              <div class="col-md-5 col-lg-4 white white-home">
+                <div class="content-wrapper">
+                  <h3>Notre Suite Familiale</h3>
+                  <p>La suite Ormelune se trouve à côté des chambres standards au premier étage. Elle se compose d’une chambre agréable à l’avant du chalet qui donne accès au balcon commun du premier étage, et une plus petite chambre à l’arrière - parfait pour vos enfants. La suite a son salle de bain privé ainsi qu’une toilette séparée, et chacune des chambres peuvent être préparées avec un lit double ou des lits jumelles.</p>
+                </div>
+              </div>
+                <div class="col-md-7 col-lg-8 img-wrapper home-img-wrapper visible-sm visible-xs">
+                  <div id="family-carousel" class="row carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                      <li data-target="#family-carousel" data-slide-to="0" class="active"></li>
+                      <li data-target="#family-carousel" data-slide-to="1"></li>
+                      <li data-target="#family-carousel" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner" role="listbox">
+                      <!-- 1st slide -->
+                      <div class="item active img-wrapper home-img-wrapper">
+                        <picture class="home-img img-responsive">
+                          <source srcset="images/100/6V7A9624-100.webp 100w,
+                                      images/300/6V7A9624-300.webp 300w,
+                                      images/500/6V7A9624-500.webp 500w,
+                                      images/750/6V7A9624-750.webp 750w,
+                                      images/1000/6V7A9624-1000.webp 1000w,
+                                      images/1500/6V7A9624-1500.webp 1500w,
+                                      images/2000/6V7A9624-2000.webp 2000w"
+                              sizes="100vw"
+                              type="image/webp">
+                            <source srcset="images/100/6V7A9624-100.jp2 100w,
+                                      images/300/6V7A9624-300.jp2 300w,
+                                      images/500/6V7A9624-500.jp2 500w,
+                                      images/750/6V7A9624-750.jp2 750w,
+                                      images/1000/6V7A9624-1000.jp2 1000w,
+                                      images/1500/6V7A9624-1500.jp2 1500w,
+                                      images/2000/6V7A9624-2000.jp2 2000w"
+                              sizes="100vw"
+                              type="image/jp2">
+                            <source srcset="images/100/6V7A9624-100.jpg 100w,
+                                      images/300/6V7A9624-300.jpg 300w,
+                                      images/500/6V7A9624-500.jpg 500w,
+                                      images/750/6V7A9624-750.jpg 750w,
+                                      images/1000/6V7A9624-1000.jpg 1000w,
+                                      images/1500/6V7A9624-1500.jpg 1500w,
+                                      images/2000/6V7A9624-2000.jpg 2000w"
+                              sizes="100vw"
+                              type="image/jpg">
+                            <img class="home-img img-responsive"
+                                 src="images/2000/6V7A9624-2000.jpg"
+                                 alt="Example Bedroom" >
+                        </picture>
+                      </div>
+                      <!-- 2nd slide -->
+                      <div class="item img-wrapper home-img-wrapper">
+                        <picture class="home-img img-responsive">
+                          <source srcset="images/100/6V7A9631-100.webp 100w,
+                                      images/300/6V7A9631-300.webp 300w,
+                                      images/500/6V7A9631-500.webp 500w,
+                                      images/750/6V7A9631-750.webp 750w,
+                                      images/1000/6V7A9631-1000.webp 1000w,
+                                      images/1500/6V7A9631-1500.webp 1500w,
+                                      images/2000/6V7A9631-2000.webp 2000w"
+                              sizes="100vw"
+                              type="image/webp">
+                            <source srcset="images/100/6V7A9631-100.jp2 100w,
+                                      images/300/6V7A9631-300.jp2 300w,
+                                      images/500/6V7A9631-500.jp2 500w,
+                                      images/750/6V7A9631-750.jp2 750w,
+                                      images/1000/6V7A9631-1000.jp2 1000w,
+                                      images/1500/6V7A9631-1500.jp2 1500w,
+                                      images/2000/6V7A9631-2000.jp2 2000w"
+                              sizes="100vw"
+                              type="image/jp2">
+                            <source srcset="images/100/6V7A9631-100.jpg 100w,
+                                      images/300/6V7A9631-300.jpg 300w,
+                                      images/500/6V7A9631-500.jpg 500w,
+                                      images/750/6V7A9631-750.jpg 750w,
+                                      images/1000/6V7A9631-1000.jpg 1000w,
+                                      images/1500/6V7A9631-1500.jpg 1500w,
+                                      images/2000/6V7A9631-2000.jpg 2000w"
+                              sizes="100vw"
+                              type="image/jpg">
+                            <img class="home-img img-responsive"
+                                 src="images/2000/6V7A9631-2000.jpg"
+                                 alt="Example Bedroom" >
+                          </picture>
+                        </div>
+                      <!-- 3rd slide -->
+                      <div class="item img-wrapper home-img-wrapper">
+                        <picture class="home-img img-responsive">
+                          <source srcset="images/100/6V7A9638-100.webp 100w,
+                                      images/300/6V7A9638-300.webp 300w,
+                                      images/500/6V7A9638-500.webp 500w,
+                                      images/750/6V7A9638-750.webp 750w,
+                                      images/1000/6V7A9638-1000.webp 1000w,
+                                      images/1500/6V7A9638-1500.webp 1500w,
+                                      images/2000/6V7A9638-2000.webp 2000w"
+                              sizes="100vw"
+                              type="image/webp">
+                            <source srcset="images/100/6V7A9638-100.jp2 100w,
+                                      images/300/6V7A9638-300.jp2 300w,
+                                      images/500/6V7A9638-500.jp2 500w,
+                                      images/750/6V7A9638-750.jp2 750w,
+                                      images/1000/6V7A9638-1000.jp2 1000w,
+                                      images/1500/6V7A9638-1500.jp2 1500w,
+                                      images/2000/6V7A9638-2000.jp2 2000w"
+                              sizes="100vw"
+                              type="image/jp2">
+                            <source srcset="images/100/6V7A9638-100.jpg 100w,
+                                      images/300/6V7A9638-300.jpg 300w,
+                                      images/500/6V7A9638-500.jpg 500w,
+                                      images/750/6V7A9638-750.jpg 750w,
+                                      images/1000/6V7A9638-1000.jpg 1000w,
+                                      images/1500/6V7A9638-1500.jpg 1500w,
+                                      images/2000/6V7A9638-2000.jpg 2000w"
+                              sizes="100vw"
+                              type="image/jpg">
+                            <img class="home-img img-responsive"
+                                 src="images/2000/6V7A9638-2000.jpg"
+                                 alt="Example Bedroom" >
+                          </picture>
+                        </div>
+                    </div>
+                    <!-- Carousel Controls -->
+                    <a class="left carousel-control" href="#family-carousel" role="button" data-slide="prev" style="background:none">
+                      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true" style="color:black"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#family-carousel" role="button" data-slide="next" style="background:none">
+                      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true" style="color:black"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+    <div class="row">
       <div class="col-md-5 col-lg-4 purple purple-home">
         <div class="content-wrapper">
+          <h3>Spa</h3>
           <p>Le SPA est équipé d’un hammam pouvant accueillir 4 personnes ainsi qu’un jacuzzi avec vue panoramique sur la vallée de la Tarentaise. Nous disposons également d’une salle de massages avec possibilité de soins sur demande et selon les disponibilités.
             L’espace balnéo est ouvert tous les après-midi, vous laissant la possibilité de vous détendre après une belle journée de ski.</p>
         </div>
       </div>
       <div class="col-md-7 col-lg-8 img-wrapper home-img-wrapper">
-        <img class="home-img home-img-wrapper" src="images/IMG_0543.jpg" alt="Embroidered Towels and Aqua de Parma Toiletries" />
-      </div>
-    </div>
-  </div>
-
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-md-3">
-        <a href="#floorPlan1" data-toggle="modal"><img class="img-responsive home-img" src="images/Ground-Floor.png" alt="Ground Floor"/></a>
-      </div>
-      <div class="col-md-3">
-        <a href="#floorPlan2" data-toggle="modal"><img class="img-responsive home-img" src="images/First-Floor.png" alt="Ground Floor"/></a>
-      </div>
-      <div class="col-md-3">
-        <a href="#floorPlan3" data-toggle="modal"><img class="img-responsive home-img" src="images/Second-Floor.png" alt="Ground Floor"/></a>
-      </div>
-      <div class="col-md-3">
-        <a href="#floorPlan4" data-toggle="modal"><img class="img-responsive home-img" src="images/Third-Floor.png" alt="Ground Floor"/></a>
+        <picture class="home-img home-img-wrapper">
+					<source srcset="images/100/IMG_0543-100.webp 100w,
+					                images/300/IMG_0543-300.webp 300w,
+					                images/500/IMG_0543-500.webp 500w,
+					                images/750/IMG_0543-750.webp 750w,
+					                images/1000/IMG_0543-1000.webp 1000w,
+					                images/1500/IMG_0543-1500.webp 1500w,
+					                images/2000/IMG_0543-2000.webp 2000w"
+					        sizes="100vw"
+					        type="image/webp">
+					<source srcset="images/100/IMG_0543-100.jp2 100w,
+					                images/300/IMG_0543-300.jp2 300w,
+					                images/500/IMG_0543-500.jp2 500w,
+					                images/750/IMG_0543-750.jp2 750w,
+					                images/1000/IMG_0543-1000.jp2 1000w,
+					                images/1500/IMG_0543-1500.jp2 1500w,
+					                images/2000/IMG_0543-2000.jp2 2000w"
+					        sizes="100vw"
+					        type="image/jp2">
+					<source srcset="images/100/IMG_0543-100.jpg 100w,
+					                images/300/IMG_0543-300.jpg 300w,
+					                images/500/IMG_0543-500.jpg 500w,
+					                images/750/IMG_0543-750.jpg 750w,
+					                images/1000/IMG_0543-1000.jpg 1000w,
+					                images/1500/IMG_0543-1500.jpg 1500w,
+					                images/2000/IMG_0543-2000.jpg 2000w"
+					        sizes="100vw"
+					        type="image/jpg">
+					<img class="home-img home-img-wrapper"
+					    src="images/2000/IMG_0543-2000.jpg"
+					    alt="Embroidered Towels and Aqua de Parma Toiletries" >
+      </picture>
       </div>
     </div>
   </div>
 
   <footer class="footer navbar-fixed-bottom navbar-inverse">
     <div class="navbar-text pull-left" id="footleft">
-      <p>&copy; The Nest 2017</p>
+      &copy; Chalet l'Aiglon <br> The Nest 2021
     </div>
     <div class="navbar-text pull-right" id="footright">
       <a style="padding-bottom:10px;" href="terms-and-conditions-fr.html">Conditions Génerales de Vente</a>
-      <a href="https://www.facebook.com/AiglonRosiere" target="_blank"><i class="fab fa-facebook-square fa-2x"></i></a>
-      <a href="https://twitter.com/ChaletAiglon" target="_blank"><i class="fab fa-twitter fa-2x"></i></a>
-      <a href="https://www.instagram.com/chaletlaiglon/" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
+      <a href="https://www.facebook.com/AiglonRosiere" target="_blank"><i class="fab fa-facebook-square fa-2x" alt="Facebook"></i></a>
+      <a href="https://twitter.com/ChaletAiglon" target="_blank"><i class="fab fa-twitter fa-2x" alt="Twitter"></i></a>
+      <a href="https://www.instagram.com/chaletlaiglon/" target="_blank"><i class="fab fa-instagram fa-2x" alt="Instagram"></i></a>
     </div>
   </footer>
 
@@ -181,58 +851,6 @@
           </div>
         </div>
       </form>
-    </div>
-  </div>
-
-  <div class="modal fade" id="floorPlan1" role="dialog">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">x</span><span class="sr-only">Close</span></button>
-        </div>
-        <div class="modal-body">
-          <img src="images/Ground-Floor.png" class="img-responsive">
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="modal fade" id="floorPlan2" role="dialog">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">x</span><span class="sr-only">Close</span></button>
-        </div>
-        <div class="modal-body">
-          <img src="images/First-Floor.png" class="img-responsive">
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="modal fade" id="floorPlan3" role="dialog">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">x</span><span class="sr-only">Close</span></button>
-        </div>
-        <div class="modal-body">
-          <img src="images/Second-Floor.png" class="img-responsive">
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="modal fade" id="floorPlan4" role="dialog">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">x</span><span class="sr-only">Close</span></button>
-        </div>
-        <div class="modal-body">
-          <img src="images/Third-Floor.png" class="img-responsive">
-        </div>
-      </div>
     </div>
   </div>
 

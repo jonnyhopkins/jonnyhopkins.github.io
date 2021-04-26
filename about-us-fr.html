@@ -16,24 +16,6 @@
     gtag('config', 'UA-110486248-1');
   </script>
 
-  <!-- Facebook Pixel Code -->
-<script>
-  !function(f,b,e,v,n,t,s)
-  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-  n.queue=[];t=b.createElement(e);t.async=!0;
-  t.src=v;s=b.getElementsByTagName(e)[0];
-  s.parentNode.insertBefore(t,s)}(window, document,'script',
-  'https://connect.facebook.net/en_US/fbevents.js');
-  fbq('init', '504517710040020');
-  fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-  src="https://www.facebook.com/tr?id=504517710040020&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Facebook Pixel Code -->
-
   <title>Chalet l'Aiglon - A Propos de Nous</title>
   <meta name="description" content="L'histoire de Jonny et Freja, les hôtes de Chalet l'Aiglon">
 
@@ -80,6 +62,7 @@
             <a href="#" class="drowdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Le Chalet <span class="caret"></span></a>
             <ul class="dropdown-menu">
               <li><a href="the-chalet-fr.html">Le Chalet</a></li>
+              <li><a href="gallery-fr.html">Galerie</a></li>
               <li><a href="getting-here-fr.html">Nous Trouver</a></li>
 
             </ul>
@@ -95,18 +78,50 @@
 
   <div class="container-fluid">
     <div class="row">
-      <div class="col-md-7 col-lg-8 purple purple-other ">
+      <div class="col-md-6 col-lg-7 purple purple-other ">
         <div class="content-wrapper">
           <h1>A propos de nous</h1>
           <hr class="hr-white"/>
-          <p>Freja, Jonny et Biscuit sont fiers de vous présenter le Chalet l'Aiglon, premières chambres d’hôtes sur la station de La Rosière. Nous partageons tous les trois la même passion pour la montagne, le ski mais surtout, la bonne nourriture et le bon vin (Oui, même Biscuit&nbsp! ).</p>
+          <p>Freja, Jonny, Biscuit et Wolf sont fiers de vous présenter le Chalet l'Aiglon, premières chambres d’hôtes sur la station de La Rosière. Nous partageons tous les quatre la même passion pour la montagne, le ski mais surtout, la bonne nourriture et le bon vin (oui, même les chiens&nbsp! ).</p>
           <p>Le Chalet l'Aiglon est aussi notre lieu de résidence, vous aurez donc de grandes chances de nous croiser très régulièrement pendant votre séjour. Nous vivons à La Rosière depuis quelques années maintenant et disposons de nombreuses connaissances sur le village et le domaine skiable, que nous serons ravis de  partager avec vous&nbsp!</p>
           <p>Nous vous attendons avec impatience dans notre belle station pour vous faire partager  notre amour pour ce lieu que nous appelons “notre maison”.</p>
           <p><em><small>Nous sommes présents sur <a href="https://www.facebook.com/AiglonRosiere">Facebook</a>, <a href="https://twitter.com/ChaletAiglon">Twitter</a> et <a href="https://www.instagram.com/chaletlaiglon/">Instagram</a>,  n’hésitez pas à nous suivre pour tout savoir sur l’avancée de notre beau chalet&nbsp!</small></em></p>
         </div>
       </div>
-      <div class="col-md-5 col-lg-4 img-wrapper other-img-wrapper">
-        <img class="home-img img-responsive " src="images/IMG_9928.jpg" alt="Photo of Us" />
+      <div class="col-md-6 col-lg-5 img-wrapper other-img-wrapper">
+        <picture class="home-img img-responsive ">
+					<source srcset="images/100/IMG_0081-100.webp 100w,
+					                images/300/IMG_0081-300.webp 300w,
+					                images/500/IMG_0081-500.webp 500w,
+					                images/750/IMG_0081-750.webp 750w,
+					                images/1000/IMG_0081-1000.webp 1000w,
+					                images/1500/IMG_0081-1500.webp 1500w,
+					                images/2000/IMG_0081-2000.webp 2000w"
+					        sizes="(min-width:992px) calc(100vh*1.3), 100vw"
+					        type="image/webp">
+					<source srcset="images/100/IMG_0081-100.jp2 100w,
+					                images/300/IMG_0081-300.jp2 300w,
+					                images/500/IMG_0081-500.jp2 500w,
+					                images/750/IMG_0081-750.jp2 750w,
+					                images/1000/IMG_0081-1000.jp2 1000w,
+					                images/1500/IMG_0081-1500.jp2 1500w,
+					                images/2000/IMG_0081-2000.jp2 2000w"
+					        sizes="(min-width:992px) calc(100vh*1.3), 100vw"
+					        type="image/jp2">
+
+					<source srcset="images/100/IMG_0081-100.jpg 100w,
+					                images/300/IMG_0081-300.jpg 300w,
+					                images/500/IMG_0081-500.jpg 500w,
+					                images/750/IMG_0081-750.jpg 750w,
+					                images/1000/IMG_0081-1000.jpg 1000w,
+					                images/1500/IMG_0081-1500.jpg 1500w,
+					                images/2000/IMG_0081-2000.jpg 2000w"
+					        sizes="(min-width:992px) calc(100vh*1.3), 100vw"
+					        type="image/jpg">
+					<img class="home-img img-responsive "
+					    src="images/2000/IMG_0081-2000.jpg"
+					    alt="Photo of Us" >
+      </picture>
       </div>
     </div>
   </div>
@@ -168,13 +183,13 @@
 
   <footer class="footer navbar-fixed-bottom navbar-inverse">
     <div class="navbar-text pull-left" id="footleft">
-      <p>&copy; The Nest 2017</p>
+      &copy; Chalet l'Aiglon <br> The Nest 2021
     </div>
     <div class="navbar-text pull-right" id="footright">
       <a style="padding-bottom:10px;" href="terms-and-conditions-fr.html">Conditions Génerales de Vente</a>
-      <a href="https://www.facebook.com/AiglonRosiere" target="_blank"><i class="fab fa-facebook-square fa-2x"></i></a>
-      <a href="https://twitter.com/ChaletAiglon" target="_blank"><i class="fab fa-twitter fa-2x"></i></a>
-      <a href="https://www.instagram.com/chaletlaiglon/" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
+      <a href="https://www.facebook.com/AiglonRosiere" target="_blank"><i class="fab fa-facebook-square fa-2x" alt="Facebook"></i></a>
+      <a href="https://twitter.com/ChaletAiglon" target="_blank"><i class="fab fa-twitter fa-2x" alt="Twitter"></i></a>
+      <a href="https://www.instagram.com/chaletlaiglon/" target="_blank"><i class="fab fa-instagram fa-2x" alt="Instagram"></i></a>
     </div>
   </footer>
 

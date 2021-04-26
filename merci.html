@@ -16,25 +16,6 @@
     gtag('config', 'UA-110486248-1');
   </script>
 
-  <!-- Facebook Pixel Code -->
-<script>
-  !function(f,b,e,v,n,t,s)
-  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-  n.queue=[];t=b.createElement(e);t.async=!0;
-  t.src=v;s=b.getElementsByTagName(e)[0];
-  s.parentNode.insertBefore(t,s)}(window, document,'script',
-  'https://connect.facebook.net/en_US/fbevents.js');
-  fbq('init', '504517710040020');
-  fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-  src="https://www.facebook.com/tr?id=504517710040020&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Facebook Pixel Code -->
-<!--Test-->
-
   <title>Chalet l'Aiglon - Merci</title>
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -80,6 +61,7 @@
             <a href="#" class="drowdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Le Chalet <span class="caret"></span></a>
             <ul class="dropdown-menu">
               <li><a href="the-chalet-fr.html">Le Chalet</a></li>
+              <li><a href="gallery-fr.html">Galerie</a></li>
               <li><a href="getting-here-fr.html">Nous Trouver</a></li>
 
             </ul>
@@ -103,20 +85,51 @@
         </div>
       </div>
       <div class="col-md-9 img-wrapper other-img-wrapper">
-        <img class="home-img img-responsive " src="images/chaletview.jpg" alt="Photo of Us" />
+        <picture class="home-img img-responsive ">
+					<source srcset="images/100/chaletview-100.webp 100w,
+					                images/300/chaletview-300.webp 300w,
+					                images/500/chaletview-500.webp 500w,
+					                images/750/chaletview-750.webp 750w,
+					                images/1000/chaletview-1000.webp 1000w,
+					                images/1500/chaletview-1500.webp 1500w,
+					                images/2000/chaletview-2000.webp 2000w"
+					        sizes="100vw"
+					        type="image/webp">
+					<source srcset="images/100/chaletview-100.jp2 100w,
+					                images/300/chaletview-300.jp2 300w,
+					                images/500/chaletview-500.jp2 500w,
+					                images/750/chaletview-750.jp2 750w,
+					                images/1000/chaletview-1000.jp2 1000w,
+					                images/1500/chaletview-1500.jp2 1500w,
+					                images/2000/chaletview-2000.jp2 2000w"
+					        sizes="100vw"
+					        type="image/jp2">
+					<source srcset="images/100/chaletview-100.jpg 100w,
+					                images/300/chaletview-300.jpg 300w,
+					                images/500/chaletview-500.jpg 500w,
+					                images/750/chaletview-750.jpg 750w,
+					                images/1000/chaletview-1000.jpg 1000w,
+					                images/1500/chaletview-1500.jpg 1500w,
+					                images/2000/chaletview-2000.jpg 2000w"
+					        sizes="100vw"
+					        type="image/jpg">
+					<img class="home-img img-responsive "
+					    src="images/2000/chaletview-2000.jpg"
+					    alt="Photo of Us" >
+      </picture>
       </div>
     </div>
   </div>
 
   <footer class="footer navbar-fixed-bottom navbar-inverse">
     <div class="navbar-text pull-left" id="footleft">
-      <p>&copy; The Nest 2017</p>
+      &copy; Chalet l'Aiglon <br> The Nest 2021
     </div>
     <div class="navbar-text pull-right" id="footright">
       <a style="padding-bottom:10px;" href="terms-and-conditions-fr.html">Conditions Génerales de Vente</a>
-      <a href="https://www.facebook.com/AiglonRosiere" target="_blank"><i class="fab fa-facebook-square fa-2x"></i></a>
-      <a href="https://twitter.com/ChaletAiglon" target="_blank"><i class="fab fa-twitter fa-2x"></i></a>
-      <a href="https://www.instagram.com/chaletlaiglon/" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
+      <a href="https://www.facebook.com/AiglonRosiere" target="_blank"><i class="fab fa-facebook-square fa-2x" alt="Facebook"></i></a>
+      <a href="https://twitter.com/ChaletAiglon" target="_blank"><i class="fab fa-twitter fa-2x" alt="Twitter"></i></a>
+      <a href="https://www.instagram.com/chaletlaiglon/" target="_blank"><i class="fab fa-instagram fa-2x" alt="Instagram"></i></a>
     </div>
   </footer>
 
